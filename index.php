@@ -6,7 +6,7 @@
 *
 * Controller por defecto si no se le pasa ninguno en la URL
  */
-define("DEFAULT_CONTROLLER", "candy");
+define("DEFAULT_CONTROLLER", "status");
 
 /**
  * Default action if any action is passed in the URL
