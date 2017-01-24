@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-01-2017 a las 17:38:47
--- Versión del servidor: 10.1.16-MariaDB
--- Versión de PHP: 5.6.24
+-- Tiempo de generación: 24-01-2017 a las 17:46:31
+-- Versión del servidor: 10.1.19-MariaDB
+-- Versión de PHP: 7.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `gomanager`
 --
+CREATE DATABASE IF NOT EXISTS `gomanager` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+USE `gomanager`;
 
 -- --------------------------------------------------------
 
@@ -26,12 +28,14 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `pokemon`
 --
 
-CREATE TABLE `pokemon` (
-  `pokemon_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `pokemon`;
+CREATE TABLE IF NOT EXISTS `pokemon` (
+  `pokemon_id` int(11) NOT NULL AUTO_INCREMENT,
   `necesary_candys` int(3) DEFAULT NULL,
   `pokemon_name` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
   `pokemon_evolution` int(3) DEFAULT NULL,
-  `pokemon_preevolution` int(3) DEFAULT NULL
+  `pokemon_preevolution` int(3) DEFAULT NULL,
+  PRIMARY KEY (`pokemon_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
@@ -40,7 +44,8 @@ CREATE TABLE `pokemon` (
 -- Estructura de tabla para la tabla `record`
 --
 
-CREATE TABLE `record` (
+DROP TABLE IF EXISTS `record`;
+CREATE TABLE IF NOT EXISTS `record` (
   `record_id` int(11) NOT NULL,
   `record_user` int(3) NOT NULL,
   `record_candys` int(3) NOT NULL DEFAULT '0',
@@ -55,42 +60,14 @@ CREATE TABLE `record` (
 -- Estructura de tabla para la tabla `user`
 --
 
-CREATE TABLE `user` (
-  `user_id` int(3) NOT NULL,
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `user_id` int(3) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `user_pass` varchar(10) COLLATE utf8_spanish_ci NOT NULL
+  `user_pass` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `pokemon`
---
-ALTER TABLE `pokemon`
-  ADD PRIMARY KEY (`pokemon_id`);
-
---
--- Indices de la tabla `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `pokemon`
---
-ALTER TABLE `pokemon`
-  MODIFY `pokemon_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT de la tabla `user`
---
-ALTER TABLE `user`
-  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
