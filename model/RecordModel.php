@@ -11,7 +11,7 @@
 class RecordModel {
 
   private $id;
-  private $user;
+  private $userId;
   private $candys;
   private $pokedex;
   private $pokemon;
@@ -37,12 +37,12 @@ class RecordModel {
     $this->id = $id;
   }
   
-  public function getUser() {
-    return $this->user;
+  public function getUserId() {
+    return $this->userId;
   }
   
-  public function setUser($user) {
-    $this->user = $user;
+  public function setUserId($userId) {
+    $this->userId = $userId;
   }
 
   public function getPokemon() {

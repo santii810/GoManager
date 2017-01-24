@@ -79,7 +79,7 @@ class ViewManager {
    * 
    * @var string
    */
-  private $layout = "default";
+  private $layout = "RecordView";
   
   
   private function __construct() {
