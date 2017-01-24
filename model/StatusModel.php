@@ -1,108 +1,65 @@
 <?php
-// file: model/status.php
+// file: model/record.php
 
 /**
- * Class Status
+ * Class Record
  * 
- * Represents a status information. A status was written by an
+ * Represents a record information. A record was written by an
  * specific User (author) and contains a list of Comments
  * 
   */
-class StatusModel {
+class RecordModel {
 
-  /**
-   * The id of this status
-   * @var string
-   */
   private $id;
-  
-  /**
-   * The pokemon of this status
-   * @var Pokemon
-   */  
-  private $pokemon;
-  
-  /**
-   * The candys of status
-   * @var string
-   */    
+  private $user;
   private $candys;
-
-/**
- * Is registered in pokedex
- *  @var bool 
- */
-private registered;
+  private $pokedex;
+  private $pokemon;
+  private $date;
 
 
 
-public function __construct($id=NULL,Pokemon $pokemon=NULL, $candys=NULL, $registered=NULL) {
-  $this->id = $id;
-  $this->pokemon = $pokemon;
-  $this->candys = $candys;
-  $this->registered = $registered;
 
-}
+  public function __construct($id=NULL,Pokemon $pokemon=NULL, $candys=NULL, $pokedex=NULL) {
+    $this->id = $id;
+    $this->pokemon = $pokemon;
+    $this->candys = $candys;
+    $this->pokedex = $pokedex;
 
-  /**
-   * Gets the id of this status
-   * 
-   * @return string The id of this status
-   */     
+  }
+
+  
   public function getId() {
     return $this->id;
   }
+
+  public function setId($id){
+    $this->id = $id;
+  }
   
-  /**
-   * Gets the pokemon of this status
-   * 
-   * @return string The pokemon of this status
-   */     
   public function getPokemon() {
     return $this->pokemon;
   }
   
-  /**
-   * Sets the pokemon of this status
-   * 
-   * @param string $pokemon the pokemon of this status
-   * @return void
-   */    
   public function setPokemon($pokemon) {
     $this->pokemon = $pokemon;
   }
 
-  /**
-   * Gets the candys of this status
-   * 
-   * @return string The candys of this status
-   */    
+
   public function getcandys() {
     return $this->candys;
   }
 
-  /**
-   * Sets the candys of statuss
-   * 
-   * @param string $candys of statuss
-   * @return void
-   */  
   public function setcandys($candys) {
     $this->candys = $candys;
   }
 
 
-  /**
-   * set if the pokemon is registered in pokedex
-   * @param bool 
-   */
-  public function setRegistered($registered){
-    $this->registered = $registered;
+  public function setRegistered($pokedex){
+    $this->pokedex = $pokedex;
   }
-  /**
-   * @return boolean status of registered pokemon
-   */
+
   public function isRegistered(){
-    return $this->registered;
+    return $this->pokedex;
   }
 }
