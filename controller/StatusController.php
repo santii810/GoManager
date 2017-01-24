@@ -2,12 +2,13 @@
  // File: /controller/CandyController.php
 require_once(__DIR__."/../controller/BaseController.php");
 
-
+require_once(__DIR__."/../model/StatusModel.php");
+require_once(__DIR__."/../mapper/StatusMapper.php");
 
 /**
 * Class CandyController
 */
-class CandyController extends BaseController
+class StatusController extends BaseController
 {
 	
   /**
@@ -16,26 +17,26 @@ class CandyController extends BaseController
    * 
    * @var CandyMapper
    */
-  private $candyMapper;  
+  private $statusMapper;  
 
   function __construct()
   {
   	parent::__construct();
 
-  	$this->candyMapper = new CandyMapper();          
+  	$this->statusMapper = new CandyMapper();          
 
   }
 
   function index(){
 
     // obtain the data from the database
-  	$candys = $this->candyMapper->findAll();    
-  	
+  	$statuss = $this->statusMapper->findAll();    
+
     // put the array containing Post object to the view
-  	$this->view->setVariable("candys", $candys);    
-  	
+  	$this->view->setVariable("statuss", $statuss);    
+
     // render the view (/view/posts/index.php)
-  	$this->view->render("candys", "index");
+  	$this->view->render("statuss", "index");
   }
 }
 

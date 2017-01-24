@@ -7,7 +7,7 @@
  * Represents a status information. A status was written by an
  * specific User (author) and contains a list of Comments
  * 
- */
+  */
 class StatusModel {
 
   /**
