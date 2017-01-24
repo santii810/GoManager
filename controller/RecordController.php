@@ -30,7 +30,7 @@ class RecordController extends BaseController
   function index(){
 
     // obtain the data from the database
-  	$recordList = $this->recordMapper->findAll();    
+  	$recordList = $this->recordMapper->getAll();    
 
     // put the array containing Post object to the view
   	$this->view->setVariable("recordList", $recordList);    
