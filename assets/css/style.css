@@ -11,10 +11,18 @@
     z-index: 9999;
 
 }
-#record_table{
+#record-table{
     margin-top: 100px;
     position: relative;
 }
+
+.pokemon-image{
+    width: 90px;
+    height: 100px;
+
+}
+
+
 
 .background_red{
    background-color:  #FF0000;  
