@@ -1,0 +1,29 @@
+
+.fixed-nav-bar{
+	background-color: #EBE9EA;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px 8px 8px 8px;
+    position: fixed;
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+
+}
+#record_table{
+    margin-top: 100px;
+    position: relative;
+}
+
+.background_red{
+   background-color:  #FF0000;  
+}
+
+.background_green{
+   background-color: #00FF00;  
+}
+
+.background_blue{
+   background-color: #0000FF;  
+}
