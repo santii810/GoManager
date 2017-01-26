@@ -1,6 +1,6 @@
 <?php
 require_once (__DIR__ . "/../core/PDOConnection.php");
-
+require_once (__DIR__ . "/../model/PokemonModel.php");
 /**
  * Class RecordMapper
  *
@@ -29,7 +29,7 @@ class RecordMapper {
 	 * @return Array of Record instances
 	 */
 	public function getAll() {
-		$id_user = 1;
+		$id_user = 0;
 		$stmt = $this->db->prepare ( "SELECT * FROM record WHERE record_user=?");
 		$stmt->execute ( array (
 			$id_user
@@ -38,10 +38,9 @@ class RecordMapper {
 		$recordList = array ();
 
 		foreach ( $record_db as $record ) {
-			array_push($record, new Record( $record["record_id"],$record["record_user"],$record["record_candys"],$record["record_pokedex"],$record["record_pokemon"],$record["record_date"]));
-
+			array_push($recordList, new RecordModel( $record["record_id"],$record["record_user"],$record["record_candys"],$record["record_pokedex"],$record["record_pokemon"],$record["record_date"]));
 		}
-
+                
 		return $recordList;
 	}
 }
