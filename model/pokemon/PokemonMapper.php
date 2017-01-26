@@ -41,11 +41,9 @@ class PokemonMapper {
         $toret = array();
 
         foreach ($db_response as $value) {
-            array_push($toret, new PokemonModel($value[COL_POKEMON_ID], $value[COL_POKEMON_NAME],
-                    $value[COL_NECESARY_CANDYS], $value[COL_EVOLUTION], $value[COL_PREEVOLUTION]));
-        }
-
-        return $toret;
+            $id = $value[COL_POKEMON_ID];
+            $pokemon = new PokemonModel($id, $value[COL_POKEMON_NAME], $value[COL_NECESARY_CANDYS], $value[COL_EVOLUTION], $value[COL_PREEVOLUTION]);
+            $toret[$id] =  $pokemon;
+        } return $toret;
     }
-
 }
