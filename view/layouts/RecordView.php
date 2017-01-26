@@ -15,35 +15,30 @@ $currentuser = $view->getVariable("currentusername");
     foreach ($pokemonList as $key => $pokemon) {
         if ($pokemon->getPokemonPreevolution() == NULL) {
             $pokemonEvolutions = array();
-            $evolutiveLineLength = 1;
+            $evolutiveFamilyLength = 1;
             if ($pokemon->getPokemonEvolution() != NULL) {
                 $evolutionId = $pokemon->getPokemonEvolution();
                 do {
                     $evolution = $pokemonList[$evolutionId];
                     array_push($pokemonEvolutions, $evolution);
                     $evolutionId = $evolution->getPokemonEvolution();
-                    $evolutiveLineLength++;
+                    $evolutiveFamilyLength++;
                 } while ($evolution->getPokemonEvolution() != NULL);
-                printRow($pokemon, $pokemonEvolutions, $evolutiveLineLength);
+                printRow($pokemon, $pokemonEvolutions, $evolutiveFamilyLength);
             }
         }
     }
 
-    function printRow(PokemonModel $pokemon, $evolutions, $evolutiveLineLength) {
+    function printRow(PokemonModel $pokemon, $evolutions, $evolutiveFamilyLength) {
         /** show preevolution cell */
         $firstweight = 6;
         $restWeight = 6;
-        switch ($evolutiveLineLength) {
+        switch ($evolutiveFamilyLength) {
             case 1:
-                $firstweight = 6;
-                $restWeight = 6;
-                break;
             case 2:
-                $firstweight = 6;
                 $restWeight = 6;
                 break;
             case 3:
-                $firstweight = 6;
                 $restWeight = 3;
                 break;
             case 4:
@@ -56,12 +51,12 @@ $currentuser = $view->getVariable("currentusername");
         }
         echo '<div id="record-table-row" class="container"> ';
         echo '  <div class="background_blue row">';
-        echo '      <div class="background_red col-xs-' . $firstweight . '">';
+        echo '      <div class="col-xs-' . $firstweight . '">';
         echo '          <img src="./assets/images/' . $pokemon->getPokemonId() . '.png" class="pokemon-image">';
         echo '      </div>';
         /* print evolutions */
         foreach ($evolutions as $evolution) {
-            echo '  <div class="background_green col-xs-' . $restWeight . '">';
+            echo '  <div class="col-xs-' . $restWeight . '">';
             echo '      <img src="./assets/images/' . $evolution->getPokemonId() . '.png" class="pokemon-image">';
             echo '  </div>';
         }
