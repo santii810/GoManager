@@ -36,8 +36,9 @@ $currentuser = $view->getVariable("currentusername");
         /** show preevolution cell */
         $firstweight = 6;
         // try yo avoid division by zero
-        if ($evolutiveFamilyLength > 1)
+        if ($evolutiveFamilyLength > 1) {
             $evolutiveFamilyLength--;
+        }
         /* Repart the 6 spaces into number os family members */
         $restWeight = 6 / ($evolutiveFamilyLength );
 
@@ -75,7 +76,7 @@ $currentuser = $view->getVariable("currentusername");
 
         /* print evolutions */
         foreach ($evolutions as $evolution) {
-            echo '  <div class="col-xs-' . $restWeight . '">';
+            echo '  <div class="col-xs-' . $restWeight . ' evolution-cell">';
             echo '      <img src="./assets/images/' . $evolution->getPokemonId() . '.png" class="pokemon-image">';
             echo '  </div>';
         }
