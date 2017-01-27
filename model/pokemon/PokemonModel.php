@@ -13,13 +13,15 @@ class PokemonModel {
     private $necesaryCandys;
     private $pokemonEvolution;
     private $pokemonPreevolution;
+    private $pokemonActive;
 
-    public function __construct($pokemonId = NULL, $pokemonName = NULL, $necesaryCandys = NULL, $pokemonEvolution = NULL, $pokemonPreevolution = NULL) {
+    public function __construct($pokemonId = NULL, $pokemonName = NULL, $necesaryCandys = NULL, $pokemonEvolution = NULL, $pokemonPreevolution = NULL, $pokemonActive) {
         $this->pokemonId = $pokemonId;
         $this->pokemonName = $pokemonName;
         $this->necesaryCandys = $necesaryCandys;
         $this->pokemonEvolution = $pokemonEvolution;
         $this->pokemonPreevolution = $pokemonPreevolution;
+        $this->pokemonActive = $pokemonActive;
     }
 
     public function getPokemonId() {
@@ -49,5 +51,21 @@ class PokemonModel {
     public function getPokemonPreevolution() {
         return $this->pokemonPreevolution;
     }
+    function getNecesaryCandys() {
+        return $this->necesaryCandys;
+    }
+
+    function isPokemonActive() {
+        return $this->pokemonActive;
+    }
+
+    function setNecesaryCandys($necesaryCandys) {
+        $this->necesaryCandys = $necesaryCandys;
+    }
+
+    function setPokemonActive($pokemonActive) {
+        $this->pokemonActive = $pokemonActive;
+    }
+
 
 }

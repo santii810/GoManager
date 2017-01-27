@@ -16,7 +16,7 @@ $currentuser = $view->getVariable("currentusername");
     //tour pokemon list. Key = pokemon id
     foreach ($pokemonList as $key => $pokemon) {
 //If pokemon not have preevolution show it
-        if ($pokemon->getPokemonPreevolution() == NULL) {
+        if ($pokemon->getPokemonPreevolution() == NULL && $pokemon->isPokemonActive()) {
             $pokemonEvolutions = array();
             $evolutiveFamilyLength = 1;
             if ($pokemon->getPokemonEvolution() != NULL) {
@@ -36,7 +36,7 @@ $currentuser = $view->getVariable("currentusername");
         /** show preevolution cell */
         $firstweight = 6;
         // try yo avoid division by zero
-        if ($evolutiveFamilyLength > 1) 
+        if ($evolutiveFamilyLength > 1)
             $evolutiveFamilyLength--;
         /* Repart the 6 spaces into number os family members */
         $restWeight = 6 / ($evolutiveFamilyLength );

@@ -13,6 +13,7 @@ define("COL_NECESARY_CANDYS", "necesary_candys");
 define("COL_POKEMON_NAME", "pokemon_name");
 define("COL_EVOLUTION", "pokemon_evolution");
 define("COL_PREEVOLUTION", "pokemon_preevolution");
+define("COL_POKEMON_ACTIVE", "pokemon_active");
 
 class PokemonMapper {
 
@@ -42,7 +43,7 @@ class PokemonMapper {
 
         foreach ($db_response as $value) {
             $id = $value[COL_POKEMON_ID];
-            $pokemon = new PokemonModel($id, $value[COL_POKEMON_NAME], $value[COL_NECESARY_CANDYS], $value[COL_EVOLUTION], $value[COL_PREEVOLUTION]);
+            $pokemon = new PokemonModel($id, $value[COL_POKEMON_NAME], $value[COL_NECESARY_CANDYS], $value[COL_EVOLUTION], $value[COL_PREEVOLUTION], $value[COL_POKEMON_ACTIVE]);
             $toret[$id] = $pokemon;
         } return $toret;
     }
