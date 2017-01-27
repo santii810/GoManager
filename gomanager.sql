@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-01-2017 a las 20:29:47
+-- Tiempo de generación: 27-01-2017 a las 03:40:42
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 7.0.13
 
@@ -211,13 +211,23 @@ INSERT INTO `pokemon` (`pokemon_id`, `necesary_candys`, `pokemon_name`, `pokemon
 
 DROP TABLE IF EXISTS `record`;
 CREATE TABLE IF NOT EXISTS `record` (
-  `record_id` int(11) NOT NULL,
+  `record_id` int(11) NOT NULL AUTO_INCREMENT,
   `record_user` int(3) NOT NULL,
   `record_candys` int(3) NOT NULL DEFAULT '0',
   `record_pokedex` tinyint(1) NOT NULL DEFAULT '0',
   `record_pokemon` int(4) NOT NULL,
-  `record_date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+  `record_date` date NOT NULL,
+  PRIMARY KEY (`record_id`),
+  UNIQUE KEY `record_pokemon` (`record_pokemon`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `record`
+--
+
+INSERT INTO `record` (`record_id`, `record_user`, `record_candys`, `record_pokedex`, `record_pokemon`, `record_date`) VALUES
+(1, 0, 0, 0, 1, '2017-01-25'),
+(5, 0, 0, 0, 2, '2017-01-25');
 
 -- --------------------------------------------------------
 
