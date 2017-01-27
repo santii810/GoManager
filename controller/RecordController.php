@@ -17,16 +17,14 @@ class RecordController extends BaseController {
      * 
      * @var CandyMapper
      */
-    private $recordMapper;  
+    private $recordMapper;
     private $pokemonMapper;
-
 
     function __construct() {
         parent::__construct();
 
-        $this->recordMapper = new RecordMapper();     
+        $this->recordMapper = new RecordMapper();
         $this->pokemonMapper = new PokemonMapper();
-
     }
 
     function index() {
@@ -34,7 +32,7 @@ class RecordController extends BaseController {
         $recordList = $this->recordMapper->getAll();
         $pokemonList = $this->pokemonMapper->getAll();
         // put the array containing Post object to the view
-        $this->view->setVariable("recordList", $recordList); 
+        $this->view->setVariable("recordList", $recordList);
         $this->view->setVariable("pokemonList", $pokemonList);
 
         // render the view (/view/posts/index.php)

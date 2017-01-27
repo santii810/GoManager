@@ -18,7 +18,7 @@ class RecordModel {
     private $pokemon;
     private $date;
 
-    public function __construct($id = NULL, $userId,  $candys = NULL, $pokedex = NULL, $pokemon = NULL, $date = null) {
+    public function __construct($id = NULL, $userId, $candys = NULL, $pokedex = NULL, $pokemon = NULL, $date = null) {
         $this->id = $id;
         $this->pokemon = new PokemonModel();
         $this->candys = $candys;

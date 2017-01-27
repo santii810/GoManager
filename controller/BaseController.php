@@ -1,6 +1,7 @@
 <?php
+
 //file: controller/BaseController.php
-require_once(__DIR__."/../core/ViewManager.php");
+require_once(__DIR__ . "/../core/ViewManager.php");
 
 /**
  * Class BaseController
@@ -17,37 +18,37 @@ require_once(__DIR__."/../core/ViewManager.php");
  */
 class BaseController {
 
-  /**
-   * The view manager instance
-   * 
-   * Instancia del view manager
-   * @var ViewManager
-   */
-  protected $view;
-  
-  /**
-   * The current user instance
-   * 
-   * Instancia del usaurio actual
-   * @var User
-   */
-  protected $currentUser;
-  
-  public function __construct() {
+    /**
+     * The view manager instance
+     * 
+     * Instancia del view manager
+     * @var ViewManager
+     */
+    protected $view;
 
-    $this->view = ViewManager::getInstance();
+    /**
+     * The current user instance
+     * 
+     * Instancia del usaurio actual
+     * @var User
+     */
+    protected $currentUser;
 
-    // get the current user and put it to the view
-    if (session_status() == PHP_SESSION_NONE) {      
-     session_start();
-   }
+    public function __construct() {
 
-   if(isset($_SESSION["currentuser"])) {
+        $this->view = ViewManager::getInstance();
 
-    $this->currentUser = new User($_SESSION["currentuser"]);      
-      //add current user to the view, since some views require it
-    $this->view->setVariable("currentusername", 
-      $this->currentUser->getUsername());
-  }     
-}
+        // get the current user and put it to the view
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (isset($_SESSION["currentuser"])) {
+
+            $this->currentUser = new User($_SESSION["currentuser"]);
+            //add current user to the view, since some views require it
+            $this->view->setVariable("currentusername", $this->currentUser->getUsername());
+        }
+    }
+
 }

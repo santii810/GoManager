@@ -1,7 +1,9 @@
-
+body{
+    background-color: rgb(51, 122, 183);
+}
 .fixed-nav-bar{
-	background-color: #EBE9EA;
-    border: 1px solid #D2D2D2;
+    background-color: rgb(35, 41, 153);
+    border: 3px solid #000000;
     border-radius: 8px 8px 8px 8px;
     position: fixed;
     height: 100px;
@@ -9,31 +11,27 @@
     width: 100%;
     top: 0px;
     z-index: 9999;
-
 }
+
+#nav-bar-margin{
+    margin-bottom: 100px;
+}
+
 #record-table-row{
-    margin-top: 100px;
+    margin-top: 10px;
     position: relative;
+    border: 5px solid;
+    border-radius: 10px;
 }
 
+
+.first-evolution-div{
+    background-color: bisque;
+}
 .pokemon-image{
     width: 140px;
     height: 150px;
- display: block;
- margin: auto ;
-
+    display: block;
+    margin: auto ;
 }
 
-
-
-.background_red{
-   background-color:  #FF0000;  
-}
-
-.background_green{
-   background-color: #00FF00;  
-}
-
-.background_blue{
-   background-color: #0000FF;  
-}

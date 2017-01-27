@@ -45,9 +45,7 @@ class RecordMapper {
         $toret = array();
 
         foreach ($db_response as $value) {
-            array_push($toret, new RecordModel($value[COL_RECORD_ID], $value[COL_RECORD_USER], 
-                    $value[COL_RECORD_CANDYS], $value[COL_RECORD_POKE], $value[COL_RECORD_POKEMON],
-                    $value[COL_RECORD_DATE]));
+            array_push($toret, new RecordModel($value[COL_RECORD_ID], $value[COL_RECORD_USER], $value[COL_RECORD_CANDYS], $value[COL_RECORD_POKE], $value[COL_RECORD_POKEMON], $value[COL_RECORD_DATE]));
         }
 
         return $toret;

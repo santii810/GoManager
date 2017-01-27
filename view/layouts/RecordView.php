@@ -9,10 +9,13 @@ $currentuser = $view->getVariable("currentusername");
     <nav class="fixed-nav-bar">
 
     </nav>
+    <div id="nav-bar-margin"><br></div>
 
 
     <?php
+    //tour pokemon list. Key = pokemon id
     foreach ($pokemonList as $key => $pokemon) {
+
         if ($pokemon->getPokemonPreevolution() == NULL) {
             $pokemonEvolutions = array();
             $evolutiveFamilyLength = 1;
@@ -45,13 +48,11 @@ $currentuser = $view->getVariable("currentusername");
                 $firstweight = 3;
                 $restWeight = 3;
                 break;
-
-            default:
-                break;
         }
+        /* print starter evolution family */
         echo '<div id="record-table-row" class="container"> ';
         echo '  <div class="background_blue row">';
-        echo '      <div class="col-xs-' . $firstweight . '">';
+        echo '      <div class="col-xs-' . $firstweight . ' first-evolution-div">';
         echo '          <img src="./assets/images/' . $pokemon->getPokemonId() . '.png" class="pokemon-image">';
         echo '      </div>';
         /* print evolutions */

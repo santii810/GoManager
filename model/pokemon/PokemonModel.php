@@ -14,8 +14,7 @@ class PokemonModel {
     private $pokemonEvolution;
     private $pokemonPreevolution;
 
-    public function __construct($pokemonId = NULL, $pokemonName = NULL, $necesaryCandys = NULL,
-            $pokemonEvolution = NULL, $pokemonPreevolution = NULL) {
+    public function __construct($pokemonId = NULL, $pokemonName = NULL, $necesaryCandys = NULL, $pokemonEvolution = NULL, $pokemonPreevolution = NULL) {
         $this->pokemonId = $pokemonId;
         $this->pokemonName = $pokemonName;
         $this->necesaryCandys = $necesaryCandys;
