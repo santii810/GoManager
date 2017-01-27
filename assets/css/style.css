@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MainFont'; /*a name to be used later*/
+    src: url('../fonts/The Butcher Factory.ttf'); /*URL to font*/
+}
+p{
+    font-family: 'MainFont';
+}
 body{
     background-color: rgb(51, 122, 183);
 }
