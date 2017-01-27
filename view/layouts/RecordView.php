@@ -15,7 +15,7 @@ $currentuser = $view->getVariable("currentusername");
     <?php
     //tour pokemon list. Key = pokemon id
     foreach ($pokemonList as $key => $pokemon) {
-
+//If pokemon not have preevolution show it
         if ($pokemon->getPokemonPreevolution() == NULL) {
             $pokemonEvolutions = array();
             $evolutiveFamilyLength = 1;
@@ -27,16 +27,19 @@ $currentuser = $view->getVariable("currentusername");
                     $evolutionId = $evolution->getPokemonEvolution();
                     $evolutiveFamilyLength++;
                 } while ($evolution->getPokemonEvolution() != NULL);
-                printRow($pokemon, $pokemonEvolutions, $evolutiveFamilyLength);
             }
+            printRow($pokemon, $pokemonEvolutions, $evolutiveFamilyLength);
         }
     }
 
     function printRow(PokemonModel $pokemon, $evolutions, $evolutiveFamilyLength) {
         /** show preevolution cell */
         $firstweight = 6;
+        // try yo avoid division by zero
+        if ($evolutiveFamilyLength > 1) 
+            $evolutiveFamilyLength--;
         /* Repart the 6 spaces into number os family members */
-        $restWeight = 6 / ($evolutiveFamilyLength - 1);
+        $restWeight = 6 / ($evolutiveFamilyLength );
 
         echo '<div id="record-table-row" class="container"> ';
         echo '  <div class="row">';
