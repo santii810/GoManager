@@ -51,6 +51,7 @@ class PokemonModel {
     public function getPokemonPreevolution() {
         return $this->pokemonPreevolution;
     }
+
     function getNecesaryCandys() {
         return $this->necesaryCandys;
     }
@@ -66,6 +67,5 @@ class PokemonModel {
     function setPokemonActive($pokemonActive) {
         $this->pokemonActive = $pokemonActive;
     }
-
 
 }

@@ -8,18 +8,18 @@ p{
 }
 .pokemon-name{
     font-size: 250%;
- text-align: center;
+    text-align: center;
 }
 body{
     background-color: rgba(51, 122, 183, 0.91);
 }
 
 .evolution-cell{
-background-color: rgba(18, 18, 116, 0.43);    
+    background-color: rgba(18, 18, 116, 0.43);    
 }
 
 .fixed-nav-bar{
-        background-color: rgb(20, 20, 140);
+    background-color: rgb(20, 20, 140);
     border: 3px solid #000000;
     border-radius: 0px 0px 6px 6px;
     position: fixed;
