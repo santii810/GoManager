@@ -35,33 +35,34 @@ $currentuser = $view->getVariable("currentusername");
     function printRow(PokemonModel $pokemon, $evolutions, $evolutiveFamilyLength) {
         /** show preevolution cell */
         $firstweight = 6;
-        $restWeight = 6;
-        switch ($evolutiveFamilyLength) {
-            case 1:
-            case 2:
-                $restWeight = 6;
-                break;
-            case 3:
-                $restWeight = 3;
-                break;
-            case 4:
-                $firstweight = 3;
-                $restWeight = 3;
-                break;
-        }
+        /* Repart the 6 spaces into number os family members */
+        $restWeight = 6 / ($evolutiveFamilyLength - 1);
+
         echo '<div id="record-table-row" class="container"> ';
         echo '  <div class="row">';
         /* print starter evolution */
         echo '      <div class="col-xs-' . $firstweight . ' first-evolution-div">';
         echo '          <div class="row">';
-        echo '              <div class="col-xs-6">';
+        echo '              <div class="col-xs-4">';
         echo '                  <img src="./assets/images/' . $pokemon->getPokemonId() . '.png" class="pokemon-image">';
         echo '              </div>';
-        /*data input container*/
-        echo '              <div class="col-xs-6">';
+        /* data input container */
+        echo '              <div class="col-xs-8">';
         echo '                  <div class="row>';
         echo '                      <div class="col-xs-12">';
-        echo '                          <h2>' . $pokemon->getPokemonName() . '</h2>';
+        echo '                          <p class="pokemon-name">' . $pokemon->getPokemonName() . '</p>';
+        echo '                      </div>';
+        echo '                      <div class="col-xs-6">';
+        echo '                          <p>Caramelos: </p>';
+        echo '                      </div>';
+        echo '                      <div class="col-xs-6">';
+        echo '                          <input id="candys-' . $pokemon->getPokemonId() . '" type="number" size="4">';
+        echo '                      </div>';
+        echo '                      <div class="col-xs-6">';
+        echo '                          <input id="evolve-' . $pokemon->getPokemonId() . '" type="checkbox">';
+        echo '                      </div> <br>';
+        echo '                      <div class="col-xs-6">';
+        echo '                          <p>Evolucionar: </p>';
         echo '                      </div>';
         echo '                  </div>';
         echo '              </div>';
