@@ -49,12 +49,26 @@ $currentuser = $view->getVariable("currentusername");
                 $restWeight = 3;
                 break;
         }
-        /* print starter evolution family */
         echo '<div id="record-table-row" class="container"> ';
-        echo '  <div class="background_blue row">';
+        echo '  <div class="row">';
+        /* print starter evolution */
         echo '      <div class="col-xs-' . $firstweight . ' first-evolution-div">';
-        echo '          <img src="./assets/images/' . $pokemon->getPokemonId() . '.png" class="pokemon-image">';
+        echo '          <div class="row">';
+        echo '              <div class="col-xs-6">';
+        echo '                  <img src="./assets/images/' . $pokemon->getPokemonId() . '.png" class="pokemon-image">';
+        echo '              </div>';
+        /*data input container*/
+        echo '              <div class="col-xs-6">';
+        echo '                  <div class="row>';
+        echo '                      <div class="col-xs-12">';
+        echo '                          <h2>' . $pokemon->getPokemonName() . '</h2>';
+        echo '                      </div>';
+        echo '                  </div>';
+        echo '              </div>';
         echo '      </div>';
+
+
+
         /* print evolutions */
         foreach ($evolutions as $evolution) {
             echo '  <div class="col-xs-' . $restWeight . '">';
