@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Name from variable setted on ViewDispacher
  * Contains one pokemon model instance
