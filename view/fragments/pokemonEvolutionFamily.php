@@ -28,7 +28,7 @@ $restWeight = 6 / ($evolutiveFamilyLength );
 if (isset($recordList[$pokemon->getPokemonId()]))
     $pokemonCandys = $recordList[$pokemon->getPokemonId()]->getCandys();
 else {
-    $pokemonCandys = 0; 
+    $pokemonCandys = 0;
 }
 ?>
 
@@ -48,7 +48,7 @@ else {
                             <p>Caramelos: </p>
                         </div>
                         <div class="col-xs-6">
-                            <input class="form-control" id="candys-<?php echo$pokemon->getPokemonId(); ?>" type="number" value="<?php echo $pokemonCandys ?>" >
+                            <input class="form-control candys-input" id="candys-<?php echo$pokemon->getPokemonId(); ?>" onblur="countCandys()" type="number" value="<?php echo $pokemonCandys ?>" >
                         </div>
                         <div class="col-xs-7">
                             <p>Evolucionar: </p>
