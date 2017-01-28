@@ -3,6 +3,7 @@ require_once (__DIR__ . "/../../core/ViewManager.php");
 $view = ViewManager::getInstance();
 require_once(__DIR__ . "/HeadView.php");
 $pokemonList = $view->getVariable("pokemonList");
+$recordList = $view->getVariable("recordList");
 $currentuser = $view->getVariable("currentusername");
 ?>
 <body>	
@@ -15,7 +16,10 @@ $currentuser = $view->getVariable("currentusername");
     <?php
     //tour pokemon list. Key = pokemon id
     foreach ($pokemonList as $key => $pokemon) {
-//If pokemon not have preevolution or preevolution is lower than id show it alwait it is active
+        /*
+         * If preevolution is null show it if now a baby 
+         *
+         */
         if (($pokemon->getPokemonPreevolution() == NULL && $pokemon->getPokemonId() < $pokemon->getPokemonEvolution() xor $pokemon->getPokemonId() < $pokemon->getPokemonPreevolution()) && $pokemon->isPokemonActive()) {
 
             $pokemonEvolutions = array();

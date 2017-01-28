@@ -8,12 +8,7 @@ require_once (__DIR__ . "/../../model/record/RecordModel.php");
  * Database interface for Record entities
  *        
  */
-define("COL_RECORD_ID", "record_id");
-define("COL_RECORD_USER", "record_user");
-define("COL_RECORD_CANDYS", "record_candys");
-define("COL_RECORD_POKEDEX", "record_pokedex");
-define("COL_RECORD_POKEMON", "record_pokemon");
-define("COL_RECORD_DATE ", "record_date");
+
 
 class RecordMapper {
 
@@ -37,7 +32,7 @@ class RecordMapper {
      */
     public function getAll() {
         $id_user = 0;
-        $stmt = $this->db->prepare("SELECT * FROM record WHERE record_user=?");
+        $stmt = $this->db->prepare("SELECT * FROM " . TABLE_RECORD . " WHERE " . COL_RECORD_USER . "=?");
         $stmt->execute(array(
             $id_user
         ));

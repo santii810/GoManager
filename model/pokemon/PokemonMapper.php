@@ -8,12 +8,6 @@ require_once (__DIR__ . "/../../model/pokemon/PokemonModel.php");
  * Database interface for Record entities
  *        
  */
-define("COL_POKEMON_ID", "pokemon_id");
-define("COL_NECESARY_CANDYS", "necesary_candys");
-define("COL_POKEMON_NAME", "pokemon_name");
-define("COL_EVOLUTION", "pokemon_evolution");
-define("COL_PREEVOLUTION", "pokemon_preevolution");
-define("COL_POKEMON_ACTIVE", "pokemon_active");
 
 class PokemonMapper {
 
@@ -36,7 +30,7 @@ class PokemonMapper {
      * @return Array of all pokemon
      */
     public function getAll() {
-        $stmt = $this->db->query("SELECT * FROM pokemon");
+        $stmt = $this->db->query("SELECT * FROM ". TABLE_POKEMON);
 
         $db_response = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $toret = array();
