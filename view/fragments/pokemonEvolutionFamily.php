@@ -6,10 +6,10 @@
 require_once (__DIR__ . "/../../core/ViewManager.php");
 $view = ViewManager::getInstance();
 
-$pokemon = $view->getVariable("pokemon");
-$pokemonEvolutions = $view->getVariable("pokemonEvolutions");
-$evolutiveFamilyLength = $view->getVariable("evolutiveFamilyLength");
-$recordList = $view->getVariable("recordList");
+$pokemon = $view->getVariable(VAR_POKEMON);
+$pokemonEvolutions = $view->getVariable(VAR_POKEMON_EVOLUTIONS);
+$evolutiveFamilyLength = $view->getVariable(VAR_EVOLUTIVE_FAMILY_LENGTH);
+$recordList = $view->getVariable(VAR_RECORD_LIST);
 
 
 /** size calcs */

@@ -2,9 +2,8 @@
 require_once (__DIR__ . "/../../core/ViewManager.php");
 $view = ViewManager::getInstance();
 require_once(__DIR__ . "/HeadView.php");
-$pokemonList = $view->getVariable("pokemonList");
-$recordList = $view->getVariable("recordList");
-$currentuser = $view->getVariable("currentusername");
+$pokemonList = $view->getVariable(VAR_POKEMON_LIST);
+$recordList = $view->getVariable(VAR_RECORD_LIST);
 ?>
 <body>	
 

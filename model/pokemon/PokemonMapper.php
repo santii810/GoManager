@@ -1,14 +1,14 @@
- <?php
+<?php
 
 require_once (__DIR__ . "/../../core/PDOConnection.php");
 require_once (__DIR__ . "/../../model/pokemon/PokemonModel.php");
+
 /**
  * Class RecordMapper
  *
  * Database interface for Record entities
  *        
  */
-
 class PokemonMapper {
 
     /**
@@ -30,7 +30,7 @@ class PokemonMapper {
      * @return Array of all pokemon
      */
     public function getAll() {
-        $stmt = $this->db->query("SELECT * FROM ". TABLE_POKEMON);
+        $stmt = $this->db->query("SELECT * FROM " . TABLE_POKEMON);
 
         $db_response = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $toret = array();

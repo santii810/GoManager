@@ -32,8 +32,8 @@ class RecordController extends BaseController {
         $recordList = $this->recordMapper->getAll();
         $pokemonList = $this->pokemonMapper->getAll();
         // put the array containing Post object to the view
-        $this->view->setVariable("recordList", $recordList);
-        $this->view->setVariable("pokemonList", $pokemonList);
+        $this->view->setVariable(VAR_RECORD_LIST, $recordList);
+        $this->view->setVariable(VAR_POKEMON_LIST, $pokemonList);
 
         // render the view (/view/posts/index.php)
         $this->view->render("recordList", "index");
