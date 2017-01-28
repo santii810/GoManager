@@ -49,7 +49,7 @@ class RecordModel {
         $this->pokemon = $pokemon;
     }
 
-    public function getcandys() {
+    public function getCandys() {
         return $this->candys;
     }
 

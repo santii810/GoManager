@@ -9,6 +9,7 @@ $view = ViewManager::getInstance();
 $pokemon = $view->getVariable("pokemon");
 $pokemonEvolutions = $view->getVariable("pokemonEvolutions");
 $evolutiveFamilyLength = $view->getVariable("evolutiveFamilyLength");
+$recordList = $view->getVariable("recordList");
 
 
 /** size calcs */
@@ -19,11 +20,21 @@ if ($evolutiveFamilyLength > 1) {
 }
 /* Repart the 6 spaces into number os family members */
 $restWeight = 6 / ($evolutiveFamilyLength );
+
+
+
+
+/** Record data */
+if (isset($recordList[$pokemon->getPokemonId()]))
+    $pokemonCandys = $recordList[$pokemon->getPokemonId()]->getCandys();
+else {
+    $pokemonCandys = 0; 
+}
 ?>
 
 <div id="record-table-row" class="container"> 
     <div class="row">
-        <div class="col-xs-<?php echo $firstweight?> first-evolution-div">
+        <div class="col-xs-<?php echo $firstweight ?> first-evolution-div">
             <div class="row">
                 <div class="col-xs-4">
                     <img src="./assets/images/<?php echo $pokemon->getPokemonId() ?>.png" class="pokemon-image">
@@ -37,7 +48,7 @@ $restWeight = 6 / ($evolutiveFamilyLength );
                             <p>Caramelos: </p>
                         </div>
                         <div class="col-xs-6">
-                            <input class="form-control" id="candys-<?php echo$pokemon->getPokemonId(); ?>" type="number" >
+                            <input class="form-control" id="candys-<?php echo$pokemon->getPokemonId(); ?>" type="number" value="<?php echo $pokemonCandys ?>" >
                         </div>
                         <div class="col-xs-7">
                             <p>Evolucionar: </p>

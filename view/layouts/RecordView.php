@@ -14,6 +14,7 @@ $currentuser = $view->getVariable("currentusername");
 
 
     <?php
+    
     //tour pokemon list. Key = pokemon id
     foreach ($pokemonList as $key => $pokemon) {
         /*
