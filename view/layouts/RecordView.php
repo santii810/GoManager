@@ -16,6 +16,7 @@ $currentuser = $view->getVariable("currentusername");
     //tour pokemon list. Key = pokemon id
     foreach ($pokemonList as $key => $pokemon) {
 //If pokemon not have preevolution or preevolution is lower than id show it alwait it is active
+        if (($pokemon->getPokemonPreevolution() == NULL && $pokemon->getPokemonId() < $pokemon->getPokemonEvolution() xor $pokemon->getPokemonId() < $pokemon->getPokemonPreevolution()) && $pokemon->isPokemonActive()) {
 
             $pokemonEvolutions = array();
             $evolutiveFamilyLength = 1;
