@@ -7,9 +7,7 @@ $recordList = $view->getVariable("recordList");
 $currentuser = $view->getVariable("currentusername");
 ?>
 <body>	
-    <nav class="fixed-nav-bar">
 
-    </nav>
     <div id="nav-bar-margin"><br></div>
 
 
@@ -50,5 +48,15 @@ $currentuser = $view->getVariable("currentusername");
         }
     }
     ?>
-
+    
+    <nav class="fixed-nav-bar">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="nav-bar-text">Caramelos totales: </p>
+            </div>
+            <div class="col-xs-6">
+                
+            </div>
+        </div>
+    </nav>
 </body>
