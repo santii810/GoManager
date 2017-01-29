@@ -46,4 +46,33 @@ class RecordMapper {
         return $toret;
     }
 
+    /**
+     * Updates a Record in the database
+     *
+     * @param RecordModel record
+     *        	The post to be updated
+     * @throws PDOException if a database error occurs
+     * @return void
+     */
+    public function update(RecordModel $record) {
+        $stmt = $this->db->prepare("UPDATE record set record_candys=?, record_date = curdate() where record_pokemon=?");
+        $stmt->execute(array(
+            $record->getCandys(),
+            $record->getPokemonId()
+        ));
+    }
+
+    public function insert(RecordModel $record) {
+        $userId = 0;
+           $stmt = $this->db->prepare("INSERT INTO record "
+                   . " ( record_user, record_candys, record_pokedex, record_pokemon, record_date) "
+                   . "VALUES (?, ?, ?, ?, CURRENT_DATE)");
+        $stmt->execute(array(
+            $userId,
+            $record->getCandys(),
+            $record->isPokedex(),
+            $record->getPokemonId(),
+        ));
+    }
+
 }

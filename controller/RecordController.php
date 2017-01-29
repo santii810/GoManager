@@ -39,6 +39,19 @@ class RecordController extends BaseController {
         $this->view->render(CONTROLLER_RECORD, ACTION_SHOW);
     }
 
+    function add() {
+        $recordList = $this->recordMapper->getAll();
+
+        foreach ($recordList as $record) {
+            $pokemonId = $record->getPokemonId();
+            $inputName = "candys-" . (string) $pokemonId;
+            if (isset($_POST[$inputName])) {
+                $record->setCandys($_POST[$inputName]);
+                $recordList = $this->recordMapper->update($record);
+            }
+        }
+       $this->show();
+    }
 }
 
 ?>

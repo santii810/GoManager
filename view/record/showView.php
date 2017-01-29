@@ -45,16 +45,19 @@ $recordList = $view->getVariable(VAR_RECORD_LIST);
         }
         ?>
 
-    <nav class="fixed-nav-bar">
-        <div class="row">
-            <div class="col-xs-6">
-                <p class="nav-bar-text">Caramelos totales: </p>
+        <nav class="fixed-nav-bar">
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="nav-bar-text">Caramelos totales: </p>
+                </div>
+                <div class="col-xs-4">
+                    <input  type="number" class="form-control" id="totalCandys" value="0">
+                </div>
+                <div    class="col-xs-4">
+                    <input type="submit" name="submit" value="Guardar">
+                </div>
             </div>
-            <div class="col-xs-6">
-                <input  type="number" class="form-control" id="totalCandys" value="0">
-            </div>
-        </div>
-    </nav>
+        </nav>
     </form>
     <<script> countCandys();</script>
 </body>

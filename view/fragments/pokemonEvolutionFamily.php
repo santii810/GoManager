@@ -29,6 +29,11 @@ if (isset($recordList[$pokemon->getPokemonId()]))
     $pokemonCandys = $recordList[$pokemon->getPokemonId()]->getCandys();
 else {
     $pokemonCandys = 0;
+    $record = new RecordModel();
+    $record->setCandys(0);
+    $record->setPokemonId($pokemon->getPokemonId());
+    $recordMapper = new RecordMapper();
+    $recordMapper->insert($record);
 }
 ?>
 
@@ -48,7 +53,7 @@ else {
                             <p>Caramelos: </p>
                         </div>
                         <div class="col-xs-6">
-                            <input class="form-control candys-input" id="candys-<?php echo$pokemon->getPokemonId(); ?>" onblur="countCandys()" type="number" value="<?php echo $pokemonCandys ?>" >
+                            <input class="form-control candys-input" name="candys-<?php echo$pokemon->getPokemonId(); ?>" onblur="countCandys()" type="number" value="<?php echo $pokemonCandys ?>" >
                         </div>
                         <div class="col-xs-7">
                             <p>Evolucionar: </p>
@@ -63,7 +68,7 @@ else {
 
         <?php foreach ($pokemonEvolutions as $evolution) : ?>
             <div class="col-xs-<?php echo $restWeight; ?> evolution-cell">
-                 <img src="./assets/images/<?php echo $evolution->getPokemonId(); ?>.png" class="pokemon-image">
+                <img src="./assets/images/<?php echo $evolution->getPokemonId(); ?>.png" class="pokemon-image">
             </div>
         <?php endforeach; ?>
 

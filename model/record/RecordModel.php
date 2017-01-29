@@ -15,14 +15,14 @@ class RecordModel {
     private $userId;
     private $candys;
     private $pokedex;
-    private $pokemon;
+    private $pokemonId;
     private $date;
 
-    public function __construct($id = NULL, $candys = NULL, $pokedex = NULL, $pokemon = NULL, $date = null) {
+    public function __construct($id = NULL, $candys = NULL, $pokedex = false, $pokemonId = NULL, $date = null) {
         $this->recordId = $id;
         $this->candys = $candys;
         $this->pokedex = $pokedex;
-        $this->pokemon = new PokemonModel($pokemon);
+        $this->pokemonId = $pokemonId;
         $this->date = $date;
     }
 
@@ -42,19 +42,19 @@ class RecordModel {
         $this->userId = $userId;
     }
 
-    public function getPokemon() {
-        return $this->pokemon;
+    public function getPokemonId() {
+        return $this->pokemonId;
     }
 
-    public function setPokemon($pokemon) {
-        $this->pokemon = $pokemon;
+    public function setPokemonId($pokemon) {
+        $this->pokemonId = $pokemon;
     }
 
     public function getCandys() {
         return $this->candys;
     }
 
-    public function setcandys($candys) {
+    public function setCandys($candys) {
         $this->candys = $candys;
     }
 
