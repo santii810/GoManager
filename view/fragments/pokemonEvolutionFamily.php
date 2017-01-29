@@ -62,7 +62,7 @@ else {
         </div>
 
         <?php foreach ($pokemonEvolutions as $evolution) : ?>
-            <div class="col-xs-<?php echo $restWeight; ?>" evolution-cell">
+            <div class="col-xs-<?php echo $restWeight; ?> evolution-cell">
                  <img src="./assets/images/<?php echo $evolution->getPokemonId(); ?>.png" class="pokemon-image">
             </div>
         <?php endforeach; ?>
