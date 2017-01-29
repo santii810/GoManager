@@ -46,6 +46,6 @@ define("COL_RECORD_POKEMON", "record_pokemon");
  * Name from column record_date of table record
  * Contains date of last update
  */
-define("COL_RECORD_DATE ", "record_date");
+define("COL_RECORD_DATE", "record_date");
 
 

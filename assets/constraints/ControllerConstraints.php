@@ -6,4 +6,5 @@
  * Controller por defecto si no se le pasa ninguno en la URL
  */
 define("DEFAULT_CONTROLLER", "record");
+define("CONTROLLER_RECORD", "record");
 

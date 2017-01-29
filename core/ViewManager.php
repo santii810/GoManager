@@ -80,7 +80,8 @@ class ViewManager {
      * 
      * @var string
      */
-    private $layout = "RecordView";
+    private $layout = "default";
+//    private $layout = "RecordView";
 
     private function __construct() {
         if (session_status() == PHP_SESSION_NONE) {
@@ -241,7 +242,7 @@ class ViewManager {
      * @param string $controller Name of the controller (in URL format
      * e.g: "posts")
      * @param string $viewname Name of the view
-     * @return void
+     * @return void 
      */
     public function render($controller, $viewname) {
         include(__DIR__ . "/../view/$controller/$viewname.php");

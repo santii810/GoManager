@@ -27,7 +27,7 @@ class RecordController extends BaseController {
         $this->pokemonMapper = new PokemonMapper();
     }
 
-    function index() {
+    function show() {
         // obtain the data from the database
         $recordList = $this->recordMapper->getAll();
         $pokemonList = $this->pokemonMapper->getAll();
@@ -36,7 +36,7 @@ class RecordController extends BaseController {
         $this->view->setVariable(VAR_POKEMON_LIST, $pokemonList);
 
         // render the view (/view/posts/index.php)
-        $this->view->render("recordList", "index");
+        $this->view->render(CONTROLLER_RECORD, ACTION_SHOW);
     }
 
 }

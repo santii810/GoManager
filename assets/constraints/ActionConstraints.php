@@ -5,5 +5,6 @@
  *
  * Accion por defecto en caso de que no se le pase en la URL
  */
-define("DEFAULT_ACTION", "index");
+define("DEFAULT_ACTION", "show");
+define("ACTION_SHOW", "show");
 

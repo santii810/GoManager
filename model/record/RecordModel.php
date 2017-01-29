@@ -11,26 +11,27 @@
  */
 class RecordModel {
 
-    private $id;
+    private $recordId;
     private $userId;
     private $candys;
     private $pokedex;
     private $pokemon;
     private $date;
 
-    public function __construct($id = NULL, $userId, $candys = NULL, $pokedex = NULL, $pokemon = NULL, $date = null) {
-        $this->id = $id;
-        $this->pokemon = new PokemonModel();
+    public function __construct($id = NULL, $candys = NULL, $pokedex = NULL, $pokemon = NULL, $date = null) {
+        $this->recordId = $id;
         $this->candys = $candys;
         $this->pokedex = $pokedex;
+        $this->pokemon = new PokemonModel($pokemon);
+        $this->date = $date;
     }
 
-    public function getId() {
-        return $this->id;
+    public function getRecordId() {
+        return $this->recordId;
     }
 
-    public function setId($id) {
-        $this->id = $id;
+    public function setRecordId($id) {
+        $this->recordId = $id;
     }
 
     public function getUserId() {
