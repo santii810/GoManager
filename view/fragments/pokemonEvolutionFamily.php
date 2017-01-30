@@ -53,7 +53,10 @@ else {
                             <p>Caramelos: </p>
                         </div>
                         <div class="col-xs-6">
-                            <input class="form-control candys-input" name="candys-<?php echo$pokemon->getPokemonId(); ?>" onblur="countCandys()" type="number" value="<?php echo $pokemonCandys ?>" >
+                            <input class="form-control candys-input" name="candys-<?php echo$pokemon->getPokemonId(); ?>" onblur="candysInputOnBlur(<?php echo$pokemon->getPokemonId(); ?>)" type="number" value="<?php echo $pokemonCandys ?>" >
+                        </div>
+                        <div    class="col-xs-12">
+                            <p id="numEvolutions-<?php $pokemon->getPokemonId(); ?>"></p>
                         </div>
                         <div class="col-xs-7">
                             <p>Evolucionar: </p>

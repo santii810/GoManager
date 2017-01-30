@@ -1,3 +1,10 @@
+function candysInputOnBlur(pokemonId, necesaryCandys) {
+    countCandys();
+    countEvolutions(pokemonId, necesaryCandys);
+
+}
+
+
 function countCandys() {
     var candys = document.getElementsByClassName('candys-input');
     var totalCandys = 0;
@@ -6,4 +13,9 @@ function countCandys() {
     }
 
     document.getElementById('totalCandys').innerHTML = "Caramelos totales: " + totalCandys;
+}
+
+function countEvolutions(pokemonId, necesaryCandys) {
+    var caramelos = document.getElementById('candys-' + pokemonId).value;
+
 }
