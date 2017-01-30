@@ -5,5 +5,5 @@ function countCandys() {
         totalCandys += parseInt(candys[i].value);
     }
 
-    document.getElementById('totalCandys').value = totalCandys;
+    document.getElementById('totalCandys').innerHTML = "Caramelos totales: " + totalCandys;
 }

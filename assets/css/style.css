@@ -14,6 +14,10 @@ p{
 main{
     background-color: rgba(51, 122, 183, 0.91);
 }
+.recordList-statistics{
+   margin-top: 15px;
+}
+
 
 .evolution-cell{
     background-color: rgba(18, 18, 116, 0.43);    
