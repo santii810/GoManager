@@ -15,7 +15,10 @@ $recordList = $view->getVariable(VAR_RECORD_LIST);
              * If preevolution is null show it if now a baby 
              *
              */
-            if (($pokemon->getPokemonPreevolution() == NULL && $pokemon->getPokemonId() < $pokemon->getPokemonEvolution() xor $pokemon->getPokemonId() < $pokemon->getPokemonPreevolution()) && $pokemon->isPokemonActive()) {
+            if ($pokemon->isPokemonActive() && 
+                    ($pokemon->getPokemonPreevolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonPreevolution()) &&
+                    ($pokemon->getPokemonEvolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonEvolution())                    
+                    ) {
 
                 $pokemonEvolutions = array();
                 $evolutiveFamilyLength = 1;
