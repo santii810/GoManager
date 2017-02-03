@@ -27,9 +27,8 @@ function countEvolutions() {
     var evolutionsOutputText = document.getElementsByClassName("num-evolutions");
 
     for (var i = 0; i < evolutionsOutputText.length; i++) {
-        varCandys = (evolutionsOutputText[i].innerHTML).split(":");
-        alert(varCandys[1]);
-        totalEvolutions += parseInt(varCandys[varCandys.length-1] )
+        var candys = (evolutionsOutputText[i].innerHTML).split(":")[1];
+        totalEvolutions += parseInt(candys)
     }
     document.getElementById('totalEvolutions').innerHTML = "Evoluciones totales: " + totalEvolutions;
 }
