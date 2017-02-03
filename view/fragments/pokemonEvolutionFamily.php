@@ -13,7 +13,7 @@ $recordList = $view->getVariable(VAR_RECORD_LIST);
 
 
 /** size calcs */
-$firstweight = 6;
+$firstWeight = 6;
 // try yo avoid division by zero
 if ($evolutiveFamilyLength > 1) {
     $evolutiveFamilyLength--;
@@ -35,11 +35,15 @@ else {
     $recordMapper = new RecordMapper();
     $recordMapper->insert($record);
 }
+
+
+
+$evolutions = intval($pokemonCandys / ($pokemon->getNecesaryCandys() - 2));
 ?>
 
 <div id="record-table-row" class="container"> 
     <div class="row">
-        <div class="col-xs-<?php echo $firstweight ?> first-evolution-div">
+        <div class="col-xs-<?php echo $firstWeight ?> first-evolution-div">
             <div class="row">
                 <div class="col-xs-4">
                     <img src="./assets/images/<?php echo $pokemon->getPokemonId() ?>.png" class="pokemon-image">
@@ -53,17 +57,19 @@ else {
                             <p>Caramelos: </p>
                         </div>
                         <div class="col-xs-6">
-                            <input class="form-control candys-input" name="candys-<?php echo$pokemon->getPokemonId(); ?>" onblur="candysInputOnBlur(<?php echo$pokemon->getPokemonId(); ?>)" type="number" value="<?php echo $pokemonCandys ?>" >
+                            <input class="form-control candys-input" name="candys-<?php echo$pokemon->getPokemonId(); ?>" id="candys-<?php echo$pokemon->getPokemonId(); ?>"
+                                   onblur="candysInputOnBlur(<?php echo $pokemon->getPokemonId() . " , " . $pokemon->getNecesaryCandys(); ?>)" 
+                                   type="number" value="<?php echo $pokemonCandys ?>" >
                         </div>
                         <div    class="col-xs-12">
-                            <p id="numEvolutions-<?php $pokemon->getPokemonId(); ?>"></p>
+                            <p id="numEvolutions-<?php echo $pokemon->getPokemonId(); ?>" class="num-evolutions">Ev: <?php echo $evolutions ?></p>
                         </div>
-                        <div class="col-xs-7">
-                            <p>Evolucionar: </p>
-                        </div>
-                        <div class="col-xs-3">
-                            <input class="checkbox-inline" id="evolve-<?php echo $pokemon->getPokemonId(); ?>" type="checkbox">
-                        </div>
+                        <!--                        <div class="col-xs-7">
+                                                    <p>Evolucionar: </p>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <input class="checkbox-inline" id="evolve-<?php echo $pokemon->getPokemonId(); ?>" type="checkbox">
+                                                </div>-->
                     </div>
                 </div>
             </div>

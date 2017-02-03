@@ -15,10 +15,10 @@ $recordList = $view->getVariable(VAR_RECORD_LIST);
              * If preevolution is null show it if now a baby 
              *
              */
-            if ($pokemon->isPokemonActive() && 
+            if ($pokemon->isPokemonActive() &&
                     ($pokemon->getPokemonPreevolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonPreevolution()) &&
-                    ($pokemon->getPokemonEvolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonEvolution())                    
-                    ) {
+                    ($pokemon->getPokemonEvolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonEvolution())
+            ) {
 
                 $pokemonEvolutions = array();
                 $evolutiveFamilyLength = 1;
@@ -53,11 +53,20 @@ $recordList = $view->getVariable(VAR_RECORD_LIST);
                 <div class="col-xs-4">
                     <p id="totalCandys" class="nav-bar-text"></p>
                 </div>
+
                 <div class="col-xs-4">
                     <input type="submit" name="submit" value="Guardar" class="btn btn-success">
                 </div>
             </div>
+            <div class="row recordList-statistics">
+                <div class="col-xs-4">
+                    <p id="totalEvolutions"  class="nav-bar-text"></p>
+                </div>
+            </div>
         </nav>
     </form>
-    <<script> countCandys();</script>
+    <<script>
+        countCandys();
+        countEvolutions();
+    </script>
 </body>

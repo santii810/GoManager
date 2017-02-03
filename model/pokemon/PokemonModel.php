@@ -36,14 +36,6 @@ class PokemonModel {
         $this->pokemonName = $pokemonName;
     }
 
-    public function getPokemonCandys() {
-        return $this->necesaryCandys;
-    }
-
-    public function setPokemonCandys($pokemonCandys) {
-        $this->necesaryCandys = $pokemonCandys;
-    }
-
     public function getPokemonEvolution() {
         return $this->pokemonEvolution;
     }
