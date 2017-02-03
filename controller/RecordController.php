@@ -50,8 +50,9 @@ class RecordController extends BaseController {
                 $recordList = $this->recordMapper->update($record);
             }
         }
-       $this->show();
+        $this->show();
     }
+
 }
 
 ?>

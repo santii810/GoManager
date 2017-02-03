@@ -28,7 +28,7 @@ function countEvolutions() {
 
     for (var i = 0; i < evolutionsOutputText.length; i++) {
         var candys = (evolutionsOutputText[i].innerHTML).split(":")[1];
-        totalEvolutions += parseInt(candys)
+        totalEvolutions += parseInt(candys);
     }
     document.getElementById('totalEvolutions').innerHTML = "Evoluciones totales: " + totalEvolutions;
 }

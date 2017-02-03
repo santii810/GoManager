@@ -64,9 +64,9 @@ class RecordMapper {
 
     public function insert(RecordModel $record) {
         $userId = 0;
-           $stmt = $this->db->prepare("INSERT INTO record "
-                   . " ( record_user, record_candys, record_pokedex, record_pokemon, record_date) "
-                   . "VALUES (?, ?, ?, ?, CURRENT_DATE)");
+        $stmt = $this->db->prepare("INSERT INTO record "
+                . " ( record_user, record_candys, record_pokedex, record_pokemon, record_date) "
+                . "VALUES (?, ?, ?, ?, CURRENT_DATE)");
         $stmt->execute(array(
             $userId,
             $record->getCandys(),
