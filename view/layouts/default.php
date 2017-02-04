@@ -55,7 +55,13 @@ $currentuser = $view->getVariable("currentusername");
                 <?= $view->popFlash() ?>
             </div>
 
-            <?= $view->getFragment(ViewManager::DEFAULT_FRAGMENT) ?>
+            <?php
+            if ($currentuser == null) {
+                header('Location: ./index.php?controller=user&action=add');
+            } else {
+                $view->getFragment(ViewManager::DEFAULT_FRAGMENT);
+            }
+            ?>
         </main>
 
     </body>

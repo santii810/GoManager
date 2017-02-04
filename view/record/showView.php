@@ -19,7 +19,6 @@ $recordList = $view->getVariable(VAR_RECORD_LIST);
                     ($pokemon->getPokemonPreevolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonPreevolution()) &&
                     ($pokemon->getPokemonEvolution() == NULL || $pokemon->getPokemonId() < $pokemon->getPokemonEvolution())
             ) {
-
                 $pokemonEvolutions = array();
                 $evolutiveFamilyLength = 1;
 
