@@ -57,7 +57,7 @@ $currentuser = $view->getVariable("currentusername");
 
             <?php
             if ($currentuser == null) {
-                header('Location: ./index.php?controller=user&action=add');
+                header('Location: ./index.php?controller=user&action=login');
             } else {
                 $view->getFragment(ViewManager::DEFAULT_FRAGMENT);
             }
