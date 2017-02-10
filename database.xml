@@ -1299,106 +1299,106 @@
 	<row>
 		<field name="record_id">1</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">17</field>
+		<field name="record_candys">19</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">1</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">5</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">83</field>
+		<field name="record_candys">16</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">4</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">8</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">84</field>
+		<field name="record_candys">119</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">7</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">9</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">83</field>
+		<field name="record_candys">101</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">10</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">10</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">198</field>
+		<field name="record_candys">262</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">13</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">11</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">574</field>
+		<field name="record_candys">741</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">16</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">12</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">136</field>
+		<field name="record_candys">148</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">19</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">13</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">147</field>
+		<field name="record_candys">185</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">21</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">14</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">266</field>
+		<field name="record_candys">318</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">23</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">15</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">40</field>
+		<field name="record_candys">44</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">172</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">16</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">74</field>
+		<field name="record_candys">80</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">27</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">17</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">71</field>
+		<field name="record_candys">87</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">29</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">18</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">105</field>
+		<field name="record_candys">107</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">32</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">19</field>
@@ -1406,7 +1406,7 @@
 		<field name="record_candys">51</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">173</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">20</field>
@@ -1414,119 +1414,119 @@
 		<field name="record_candys">2</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">37</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">21</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">80</field>
+		<field name="record_candys">260</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">174</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">22</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">173</field>
+		<field name="record_candys">192</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">41</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">23</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">55</field>
+		<field name="record_candys">63</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">43</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">24</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">182</field>
+		<field name="record_candys">222</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">46</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">25</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">148</field>
+		<field name="record_candys">188</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">48</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">26</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">55</field>
+		<field name="record_candys">90</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">50</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">27</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">171</field>
+		<field name="record_candys">194</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">52</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">28</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">136</field>
+		<field name="record_candys">153</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">54</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">29</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">28</field>
+		<field name="record_candys">30</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">56</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">30</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">54</field>
+		<field name="record_candys">61</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">58</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">31</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">192</field>
+		<field name="record_candys">245</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">60</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">32</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">121</field>
+		<field name="record_candys">124</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">63</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">33</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">23</field>
+		<field name="record_candys">28</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">66</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">34</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">60</field>
+		<field name="record_candys">66</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">69</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">35</field>
@@ -1534,15 +1534,15 @@
 		<field name="record_candys">89</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">72</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">36</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">19</field>
+		<field name="record_candys">26</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">74</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">37</field>
@@ -1550,15 +1550,15 @@
 		<field name="record_candys">79</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">77</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">38</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">101</field>
+		<field name="record_candys">230</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">79</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">39</field>
@@ -1566,7 +1566,7 @@
 		<field name="record_candys">71</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">81</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">40</field>
@@ -1574,7 +1574,7 @@
 		<field name="record_candys">54</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">84</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">41</field>
@@ -1582,7 +1582,7 @@
 		<field name="record_candys">57</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">86</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">42</field>
@@ -1590,23 +1590,23 @@
 		<field name="record_candys">37</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">88</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">43</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">18</field>
+		<field name="record_candys">27</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">90</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">44</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">50</field>
+		<field name="record_candys">60</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">92</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">45</field>
@@ -1614,15 +1614,15 @@
 		<field name="record_candys">54</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">96</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">46</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">175</field>
+		<field name="record_candys">213</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">98</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">47</field>
@@ -1630,15 +1630,15 @@
 		<field name="record_candys">66</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">100</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">48</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">1</field>
+		<field name="record_candys">33</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">102</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">49</field>
@@ -1646,55 +1646,55 @@
 		<field name="record_candys">24</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">104</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">50</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">69</field>
+		<field name="record_candys">70</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">109</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">51</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">46</field>
+		<field name="record_candys">8</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">111</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">52</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">91</field>
+		<field name="record_candys">102</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">116</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">53</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">151</field>
+		<field name="record_candys">195</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">118</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">54</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">181</field>
+		<field name="record_candys">204</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">120</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">55</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">83</field>
+		<field name="record_candys">84</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">238</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">56</field>
@@ -1702,63 +1702,63 @@
 		<field name="record_candys">1</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">239</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">57</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">149</field>
+		<field name="record_candys">157</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">240</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">58</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">237</field>
+		<field name="record_candys">247</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">129</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">59</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">233</field>
+		<field name="record_candys">291</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">133</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">60</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">43</field>
+		<field name="record_candys">3</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">138</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">61</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">18</field>
+		<field name="record_candys">36</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">140</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">62</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">75</field>
+		<field name="record_candys">115</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">147</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">63</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">0</field>
+		<field name="record_candys">22</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">175</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">64</field>
@@ -1766,47 +1766,47 @@
 		<field name="record_candys">0</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">83</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">65</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">36</field>
+		<field name="record_candys">42</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">95</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">66</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">15</field>
+		<field name="record_candys">45</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">106</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">67</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">45</field>
+		<field name="record_candys">15</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">107</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">68</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">28</field>
+		<field name="record_candys">62</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">108</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">69</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">39</field>
+		<field name="record_candys">61</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">113</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">70</field>
@@ -1814,7 +1814,7 @@
 		<field name="record_candys">42</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">114</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">71</field>
@@ -1822,15 +1822,15 @@
 		<field name="record_candys">0</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">115</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">72</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">166</field>
+		<field name="record_candys">175</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">122</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">73</field>
@@ -1838,7 +1838,7 @@
 		<field name="record_candys">11</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">123</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">74</field>
@@ -1846,7 +1846,7 @@
 		<field name="record_candys">57</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">127</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">75</field>
@@ -1854,7 +1854,7 @@
 		<field name="record_candys">0</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">128</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">76</field>
@@ -1862,7 +1862,7 @@
 		<field name="record_candys">0</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">131</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">77</field>
@@ -1870,7 +1870,7 @@
 		<field name="record_candys">11</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">132</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">78</field>
@@ -1878,7 +1878,7 @@
 		<field name="record_candys">13</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">137</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">79</field>
@@ -1886,15 +1886,15 @@
 		<field name="record_candys">78</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">142</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	<row>
 		<field name="record_id">80</field>
 		<field name="record_user">0</field>
-		<field name="record_candys">28</field>
+		<field name="record_candys">67</field>
 		<field name="record_pokedex">0</field>
 		<field name="record_pokemon">143</field>
-		<field name="record_date">2017-02-04</field>
+		<field name="record_date">2017-02-10</field>
 	</row>
 	</table_data>
 	<table_structure name="user">
