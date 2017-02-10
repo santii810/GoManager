@@ -30,7 +30,7 @@ class RecordMapper {
      * @return Array of Record instances
      */
     public function getAll() {
-        $id_user = 0;
+        $id_user = ACTUAL_USER_ID;
         $stmt = $this->db->prepare("SELECT * FROM " . TABLE_RECORD . " WHERE " . COL_RECORD_USER . "=?");
         $stmt->execute(array(
             $id_user
@@ -63,7 +63,7 @@ class RecordMapper {
     }
 
     public function insert(RecordModel $record) {
-        $userId = 0;
+        $userId = ACTUAL_USER_ID;
         $stmt = $this->db->prepare("INSERT INTO record "
                 . " ( record_user, record_candys, record_pokedex, record_pokemon, record_date) "
                 . "VALUES (?, ?, ?, ?, CURRENT_DATE)");
