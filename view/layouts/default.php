@@ -2,7 +2,12 @@
 // file: view/layouts/default.php
 require_once (__DIR__ . "/../../core/ViewManager.php");
 $view = ViewManager::getInstance();
-$currentuser = $view->getVariable("currentusername");
+$currentUser = $view->getVariable(CURRENT_USERNAME);
+
+if (!isset($currentUser)) {
+    echo "hola";
+//    $view->redirect("user", "login");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +34,7 @@ $currentuser = $view->getVariable("currentusername");
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!--end bootstrap assets -->
 
-        <?= $view->getFragment("css") ?>
+<?= $view->getFragment("css") ?>
         <?= $view->getFragment("javascript") ?>
     </head>
     <body>        
@@ -39,29 +44,32 @@ $currentuser = $view->getVariable("currentusername");
                             <ul>
                                 <li><a href="index.php?controller=posts&amp;action=index">Posts</a></li>
             
-            <?php // if (isset($currentuser)): ?>
-                                        <li><?php echo "Bienvenido" . $currentuser ?>
+<?php // if (isset($currentuser)):   ?>
+                                        <li><?php echo "Bienvenido" . $currentUser ?>
                                             <a href="index.php?controller=users&amp;action=logout">(Logout)</a>
                                         </li>
                 
-            <?php // else: ?>
+<?php // else:   ?>
                                         <li><a href="index.php?controller=users&amp;action=login"><?php echo "Login" ?></a></li>
-            <?php // endif; ?>		</ul>
+            <?php // endif;  ?>		</ul>
                         </nav>-->
         </header>
 
         <main>
             <div id="flash">
-                <?= $view->popFlash() ?>
+<?= $view->popFlash() ?>
             </div>
 
-            <?php
-            if ($currentuser == null) {
-                header('Location: ./index.php?controller=user&action=login');
-            } else {
-                $view->getFragment(ViewManager::DEFAULT_FRAGMENT);
-            }
-            ?>
+<?php
+//            echo "santi " . $view->getVariable(CURRENT_USERNAME);
+//            if ($view->getVariable(CURRENT_USERNAME) == null) {
+//                $view->redirect("user", "login");
+//            }
+//            else {
+//            $view->getFragment(ViewManager::DEFAULT_FRAGMENT);
+//            }
+?>
+            <?= $view->getFragment(ViewManager::DEFAULT_FRAGMENT) ?>
         </main>
 
     </body>

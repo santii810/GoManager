@@ -25,4 +25,9 @@ define("VAR_RECORD_LIST", "recordList");
  * Contains list of pokemon Model
  */
 define("VAR_POKEMON_LIST", "pokemonList");
+/**
+ * Name from variable setted on ViewDispacher
+ * Contains the current user data
+ */
+define("CURRENT_USERNAME", "currentUsername");
 

@@ -9,12 +9,12 @@
 class UserModel {
 
     private $userId;
-    private $userName;
+    private $username;
     private $userPass;
 
     public function __construct($userId = NULL, $userName = NULL, $userPass = NULL) {
         $this->userId = $userId;
-        $this->userName = $userName;
+        $this->username = $userName;
         $this->userPass = $userPass;
     }
 
@@ -26,12 +26,12 @@ class UserModel {
         $this->userId = $userId;
     }
 
-    public function getUserName() {
-        return $this->userName;
+    public function getUsername() {
+        return $this->username;
     }
 
-    public function setUserName($userName) {
-        $this->userName = $userName;
+    public function setUsername($userName) {
+        $this->username = $userName;
     }
 
     public function getUserPass() {

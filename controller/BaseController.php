@@ -2,6 +2,8 @@
 
 //file: controller/BaseController.php
 require_once(__DIR__ . "/../core/ViewManager.php");
+require_once (__DIR__ . "/../model/user/UserModel.php");
+
 
 /**
  * Class BaseController
@@ -43,11 +45,10 @@ class BaseController {
             session_start();
         }
 
-        if (isset($_SESSION["currentuser"])) {
-
-            $this->currentUser = new User($_SESSION["currentuser"]);
+        if (isset($_SESSION[CURRENT_USERNAME])) {
+            $this->currentUser = new UserModel($_SESSION[CURRENT_USERNAME]);
             //add current user to the view, since some views require it
-            $this->view->setVariable("currentusername", $this->currentUser->getUsername());
+            $this->view->setVariable(CURRENT_USERNAME, $this->currentUser->getUsername());
         }
     }
 
