@@ -18,8 +18,12 @@ $firstWeight = 6;
 if ($evolutiveFamilyLength > 1) {
     $evolutiveFamilyLength--;
 }
+
 /* Repart the 6 spaces into number os family members */
-$restWeight = 6 / ($evolutiveFamilyLength );
+
+$restWeight = 12 / ($evolutiveFamilyLength );
+
+    
 
 
 
@@ -76,12 +80,17 @@ $evolutions = intval($pokemonCandys / ($pokemon->getNecesaryCandys() - 2));
                 </div>
             </div>
         </div>
+        <div class="col-xs-6">
 
         <?php foreach ($pokemonEvolutions as $evolution) : ?>
+          <?php  if($pokemon->getPokemonId()==133 && $evolution->getPokemonId()<150)    $restWeight = 4; 
+           if($pokemon->getPokemonId()==133 && $evolution->getPokemonId()>150)    $restWeight = 6; ?>
+
             <div class="col-xs-<?php echo $restWeight; ?> evolution-cell">
                 <img src="./assets/images/<?php echo $evolution->getPokemonId(); ?>.png" class="pokemon-image">
             </div>
         <?php endforeach; ?>
 
+        </div>
     </div>
 </div>
