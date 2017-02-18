@@ -20,7 +20,6 @@ main{
 
 
 .evolution-cell{
-    background-color: rgba(18, 18, 116, 0.43);    
 }
 
 .fixed-nav-bar{
@@ -48,6 +47,7 @@ main{
     position: relative;
     border: 5px solid;
     border-radius: 10px;
+    background-color: rgba(18, 18, 116, 0.43);
 }
 
 

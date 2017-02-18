@@ -334,7 +334,7 @@
 	</row>
 	<row>
 		<field name="pokemon_id">41</field>
-		<field name="necesary_candys">50</field>
+		<field name="necesary_candys">25</field>
 		<field name="pokemon_name">Zubat</field>
 		<field name="pokemon_evolution">42</field>
 		<field name="pokemon_preevolution" xsi:nil="true" />
@@ -504,7 +504,7 @@
 		<field name="pokemon_id">62</field>
 		<field name="necesary_candys">0</field>
 		<field name="pokemon_name">Poliwrath</field>
-		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_evolution">186</field>
 		<field name="pokemon_preevolution">61</field>
 		<field name="pokemon_active">1</field>
 	</row>
@@ -1497,7 +1497,7 @@
 		<field name="necesary_candys">50</field>
 		<field name="pokemon_name">Politoed</field>
 		<field name="pokemon_evolution" xsi:nil="true" />
-		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">62</field>
 		<field name="pokemon_active">1</field>
 	</row>
 	<row>
