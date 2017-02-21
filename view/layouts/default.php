@@ -34,7 +34,7 @@ if (!isset($currentUser)) {
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!--end bootstrap assets -->
 
-<?= $view->getFragment("css") ?>
+        <?= $view->getFragment("css") ?>
         <?= $view->getFragment("javascript") ?>
     </head>
     <body>        
@@ -44,12 +44,12 @@ if (!isset($currentUser)) {
                             <ul>
                                 <li><a href="index.php?controller=posts&amp;action=index">Posts</a></li>
             
-<?php // if (isset($currentuser)):   ?>
+            <?php // if (isset($currentuser)):   ?>
                                         <li><?php echo "Bienvenido" . $currentUser ?>
                                             <a href="index.php?controller=users&amp;action=logout">(Logout)</a>
                                         </li>
                 
-<?php // else:   ?>
+            <?php // else:   ?>
                                         <li><a href="index.php?controller=users&amp;action=login"><?php echo "Login" ?></a></li>
             <?php // endif;  ?>		</ul>
                         </nav>-->
@@ -57,10 +57,10 @@ if (!isset($currentUser)) {
 
         <main>
             <div id="flash">
-<?= $view->popFlash() ?>
+                <?= $view->popFlash() ?>
             </div>
 
-<?php
+            <?php
 //            echo "santi " . $view->getVariable(CURRENT_USERNAME);
 //            if ($view->getVariable(CURRENT_USERNAME) == null) {
 //                $view->redirect("user", "login");
@@ -68,7 +68,7 @@ if (!isset($currentUser)) {
 //            else {
 //            $view->getFragment(ViewManager::DEFAULT_FRAGMENT);
 //            }
-?>
+            ?>
             <?= $view->getFragment(ViewManager::DEFAULT_FRAGMENT) ?>
         </main>
 

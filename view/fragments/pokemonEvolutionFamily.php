@@ -23,7 +23,7 @@ if ($evolutiveFamilyLength > 1) {
 
 $restWeight = 12 / ($evolutiveFamilyLength );
 
-    
+
 
 
 
@@ -65,10 +65,10 @@ $evolutions = intval($pokemonCandys / ($pokemon->getNecesaryCandys() - 2));
                                    onblur="candysInputOnBlur(<?php echo $pokemon->getPokemonId() . " , " . $pokemon->getNecesaryCandys(); ?>)" 
                                    type="number" value="<?php echo $pokemonCandys ?>" >
                         </div>
-                        <?php if($pokemon->getNecesaryCandys() != 0): ?>
-                        <div    class="col-xs-12">
-                            <p id="numEvolutions-<?php echo $pokemon->getPokemonId(); ?>" class="num-evolutions">Ev: <?php echo $evolutions ?></p>
-                        </div>
+                        <?php if ($pokemon->getNecesaryCandys() != 0): ?>
+                            <div    class="col-xs-12">
+                                <p id="numEvolutions-<?php echo $pokemon->getPokemonId(); ?>" class="num-evolutions">Ev: <?php echo $evolutions ?></p>
+                            </div>
                         <?php endif; ?>
                         <!--                        <div class="col-xs-7">
                                                     <p>Evolucionar: </p>
@@ -82,14 +82,18 @@ $evolutions = intval($pokemonCandys / ($pokemon->getNecesaryCandys() - 2));
         </div>
         <div class="col-xs-6">
 
-        <?php foreach ($pokemonEvolutions as $evolution) : ?>
-          <?php  if($pokemon->getPokemonId()==133 && $evolution->getPokemonId()<150)    $restWeight = 4; 
-           if($pokemon->getPokemonId()==133 && $evolution->getPokemonId()>150)    $restWeight = 6; ?>
+            <?php foreach ($pokemonEvolutions as $evolution) : ?>
+                <?php
+                if ($pokemon->getPokemonId() == 133 && $evolution->getPokemonId() < 150)
+                    $restWeight = 4;
+                if ($pokemon->getPokemonId() == 133 && $evolution->getPokemonId() > 150)
+                    $restWeight = 6;
+                ?>
 
-            <div class="col-xs-<?php echo $restWeight; ?> evolution-cell">
-                <img src="./assets/images/<?php echo $evolution->getPokemonId(); ?>.png" class="pokemon-image">
-            </div>
-        <?php endforeach; ?>
+                <div class="col-xs-<?php echo $restWeight; ?> evolution-cell">
+                    <img src="./assets/images/<?php echo $evolution->getPokemonId(); ?>.png" class="pokemon-image">
+                </div>
+            <?php endforeach; ?>
 
         </div>
     </div>
