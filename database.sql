@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 -- MySQL dump 10.16  Distrib 10.1.19-MariaDB, for Win32 (AMD64)
 --
 -- Host: localhost    Database: localhost
@@ -118,4 +117,4 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2017-02-17 22:26:05
->>>>>>> parent of 5ec6116... correcciones en base de datos
+
