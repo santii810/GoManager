@@ -1,0 +1,4235 @@
+<<<<<<< HEAD
+=======
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="gomanager">
+	<table_structure name="pokemon">
+		<field Field="pokemon_id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="necesary_candys" Type="int(3)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="pokemon_name" Type="varchar(20)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="pokemon_evolution" Type="int(3)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="pokemon_preevolution" Type="int(3)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="pokemon_active" Type="tinyint(1)" Null="NO" Key="" Default="1" Extra="" Comment="" />
+		<key Table="pokemon" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="pokemon_id" Collation="A" Cardinality="251" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="pokemon" Engine="InnoDB" Version="10" Row_format="Compact" Rows="251" Avg_row_length="65" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="252" Create_time="2017-01-27 03:33:38" Collation="utf8_spanish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="pokemon">
+	<row>
+		<field name="pokemon_id">1</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Bulbasaur</field>
+		<field name="pokemon_evolution">2</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">2</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Ivysaur</field>
+		<field name="pokemon_evolution">3</field>
+		<field name="pokemon_preevolution">1</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">3</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Venusaur</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">2</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">4</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Charmander</field>
+		<field name="pokemon_evolution">5</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">5</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Charmeleon</field>
+		<field name="pokemon_evolution">6</field>
+		<field name="pokemon_preevolution">4</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">6</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Charizard</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">5</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">7</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Squirtle</field>
+		<field name="pokemon_evolution">8</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">8</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Wartortle</field>
+		<field name="pokemon_evolution">9</field>
+		<field name="pokemon_preevolution">7</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">9</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Blastoise</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">8</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">10</field>
+		<field name="necesary_candys">12</field>
+		<field name="pokemon_name">Caterpie</field>
+		<field name="pokemon_evolution">11</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">11</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Metapod</field>
+		<field name="pokemon_evolution">12</field>
+		<field name="pokemon_preevolution">10</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">12</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Butterfree</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">11</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">13</field>
+		<field name="necesary_candys">12</field>
+		<field name="pokemon_name">Weedle</field>
+		<field name="pokemon_evolution">14</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">14</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Kakuna</field>
+		<field name="pokemon_evolution">15</field>
+		<field name="pokemon_preevolution">13</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">15</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Beedrill</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">14</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">16</field>
+		<field name="necesary_candys">12</field>
+		<field name="pokemon_name">Pidgey</field>
+		<field name="pokemon_evolution">17</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">17</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Pidgeotto</field>
+		<field name="pokemon_evolution">18</field>
+		<field name="pokemon_preevolution">16</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">18</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Pidgeot</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">17</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">19</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Rattata</field>
+		<field name="pokemon_evolution">20</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">20</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Raticate</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">19</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">21</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Spearow</field>
+		<field name="pokemon_evolution">22</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">22</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Fearow</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">21</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">23</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ekans</field>
+		<field name="pokemon_evolution">24</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">24</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Arbok</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">23</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">25</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Pikachu</field>
+		<field name="pokemon_evolution">26</field>
+		<field name="pokemon_preevolution">172</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">26</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Raichu</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">25</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">27</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Sandshrew</field>
+		<field name="pokemon_evolution">28</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">28</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Sandslash</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">27</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">29</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Nidoran F</field>
+		<field name="pokemon_evolution">30</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">30</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Nidorina</field>
+		<field name="pokemon_evolution">31</field>
+		<field name="pokemon_preevolution">29</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">31</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Nidoqueen</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">30</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">32</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Nidoran M</field>
+		<field name="pokemon_evolution">33</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">33</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Nidorino</field>
+		<field name="pokemon_evolution">34</field>
+		<field name="pokemon_preevolution">32</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">34</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Nidoking</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">33</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">35</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Clefairy</field>
+		<field name="pokemon_evolution">36</field>
+		<field name="pokemon_preevolution">173</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">36</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Clefable</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">35</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">37</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Vulpix</field>
+		<field name="pokemon_evolution">38</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">38</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Ninetales</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">37</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">39</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Gigglypuff</field>
+		<field name="pokemon_evolution">40</field>
+		<field name="pokemon_preevolution">174</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">40</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Wigglytuff</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">39</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">41</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Zubat</field>
+		<field name="pokemon_evolution">42</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">42</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Golbat</field>
+		<field name="pokemon_evolution">169</field>
+		<field name="pokemon_preevolution">41</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">43</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Oddish</field>
+		<field name="pokemon_evolution">44</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">44</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Gloom</field>
+		<field name="pokemon_evolution">45</field>
+		<field name="pokemon_preevolution">43</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">45</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Vileplume</field>
+		<field name="pokemon_evolution">182</field>
+		<field name="pokemon_preevolution">44</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">46</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Paras</field>
+		<field name="pokemon_evolution">47</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">47</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Parasect</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">46</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">48</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Venonat</field>
+		<field name="pokemon_evolution">49</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">49</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Venomoth</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">48</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">50</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Diglett</field>
+		<field name="pokemon_evolution">51</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">51</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Dugtrio</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">50</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">52</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Meowth</field>
+		<field name="pokemon_evolution">53</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">53</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Persian</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">52</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">54</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Psyduck</field>
+		<field name="pokemon_evolution">55</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">55</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Golduck</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">54</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">56</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Mankey</field>
+		<field name="pokemon_evolution">57</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">57</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Primeape</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">56</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">58</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Growlithe</field>
+		<field name="pokemon_evolution">59</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">59</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Arcanine</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">58</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">60</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Poliwag</field>
+		<field name="pokemon_evolution">61</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">61</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Poliwhirl</field>
+		<field name="pokemon_evolution">62</field>
+		<field name="pokemon_preevolution">60</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">62</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Poliwrath</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">61</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">63</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Abra</field>
+		<field name="pokemon_evolution">64</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">64</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Kadabra</field>
+		<field name="pokemon_evolution">65</field>
+		<field name="pokemon_preevolution">63</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">65</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Alakazam</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">64</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">66</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Machop</field>
+		<field name="pokemon_evolution">67</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">67</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Machoke</field>
+		<field name="pokemon_evolution">68</field>
+		<field name="pokemon_preevolution">66</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">68</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Machamp</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">67</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">69</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Bellsprout</field>
+		<field name="pokemon_evolution">70</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">70</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Weepinbell</field>
+		<field name="pokemon_evolution">71</field>
+		<field name="pokemon_preevolution">69</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">71</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Victreebel</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">70</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">72</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Tentacool</field>
+		<field name="pokemon_evolution">73</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">73</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Tentacruel</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">72</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">74</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Geodude</field>
+		<field name="pokemon_evolution">75</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">75</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Graveler</field>
+		<field name="pokemon_evolution">76</field>
+		<field name="pokemon_preevolution">74</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">76</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Golem</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">75</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">77</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ponyta</field>
+		<field name="pokemon_evolution">78</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">78</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Rapidash</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">77</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">79</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Slowpoke</field>
+		<field name="pokemon_evolution">80</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">80</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Slowbro</field>
+		<field name="pokemon_evolution">199</field>
+		<field name="pokemon_preevolution">79</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">81</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Magnemite</field>
+		<field name="pokemon_evolution">82</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">82</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Magneton</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">81</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">83</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Farfetch d</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">84</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Doduo</field>
+		<field name="pokemon_evolution">85</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">85</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Dodrio</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">84</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">86</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Seel</field>
+		<field name="pokemon_evolution">87</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">87</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Dewgong</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">86</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">88</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Grimer</field>
+		<field name="pokemon_evolution">89</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">89</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Muk</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">88</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">90</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Shellder</field>
+		<field name="pokemon_evolution">91</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">91</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Cloyster</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">90</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">92</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Gastly</field>
+		<field name="pokemon_evolution">93</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">93</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Haunter</field>
+		<field name="pokemon_evolution">94</field>
+		<field name="pokemon_preevolution">92</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">94</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Gengar</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">93</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">95</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Onyx</field>
+		<field name="pokemon_evolution">208</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">96</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Drowzee</field>
+		<field name="pokemon_evolution">97</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">97</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Hypno</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">96</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">98</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Krabby</field>
+		<field name="pokemon_evolution">99</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">99</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Kingler</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">98</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">100</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Voltorb</field>
+		<field name="pokemon_evolution">101</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">101</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Electrode</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">100</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">102</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Exeggcute</field>
+		<field name="pokemon_evolution">103</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">103</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Exeggcutor</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">102</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">104</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Cubone</field>
+		<field name="pokemon_evolution">105</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">105</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Marowak</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">104</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">106</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Hitmonlee</field>
+		<field name="pokemon_evolution">107</field>
+		<field name="pokemon_preevolution">236</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">107</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Hitmonchan</field>
+		<field name="pokemon_evolution">237</field>
+		<field name="pokemon_preevolution">106</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">108</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Lickitung</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">109</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Koffing</field>
+		<field name="pokemon_evolution">110</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">110</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Weezing</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">109</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">111</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Rhyhorn</field>
+		<field name="pokemon_evolution">112</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">112</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Rhydon</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">111</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">113</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Chansey</field>
+		<field name="pokemon_evolution">242</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">114</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Tangela</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">115</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Kangaskhan</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">116</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Horsea</field>
+		<field name="pokemon_evolution">117</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">117</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Seadra</field>
+		<field name="pokemon_evolution">230</field>
+		<field name="pokemon_preevolution">116</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">118</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Goldeen</field>
+		<field name="pokemon_evolution">119</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">119</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Seaking</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">118</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">120</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Staryu</field>
+		<field name="pokemon_evolution">121</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">121</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Starmie</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">120</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">122</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Mr.Mime</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">123</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Scyther</field>
+		<field name="pokemon_evolution">212</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">124</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Jynx</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">238</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">125</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Electabuzz</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">239</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">126</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Magmar</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">240</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">127</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Pinsir</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">128</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Tauros </field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">129</field>
+		<field name="necesary_candys">400</field>
+		<field name="pokemon_name">Magikarp</field>
+		<field name="pokemon_evolution">130</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">130</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Gyarados</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">129</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">131</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Lapras</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">132</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Ditto </field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">133</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Eevee</field>
+		<field name="pokemon_evolution">134</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">134</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Vaporeon</field>
+		<field name="pokemon_evolution">135</field>
+		<field name="pokemon_preevolution">133</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">135</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Jolteon</field>
+		<field name="pokemon_evolution">136</field>
+		<field name="pokemon_preevolution">134</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">136</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Flareon</field>
+		<field name="pokemon_evolution">196</field>
+		<field name="pokemon_preevolution">135</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">137</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Porygon</field>
+		<field name="pokemon_evolution">233</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">138</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Omanyte</field>
+		<field name="pokemon_evolution">139</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">139</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Omastar</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">138</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">140</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Kabuto</field>
+		<field name="pokemon_evolution">141</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">141</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Kabutops</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">140</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">142</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Aerodactyl</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">143</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Snorlax</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">144</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Articuno </field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">145</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Zapdos</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">146</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Moltres </field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">147</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Dratini</field>
+		<field name="pokemon_evolution">148</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">148</field>
+		<field name="necesary_candys">100</field>
+		<field name="pokemon_name">Dragonair</field>
+		<field name="pokemon_evolution">149</field>
+		<field name="pokemon_preevolution">147</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">149</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Dragonite</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">148</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">150</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Mewtwo </field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">151</field>
+		<field name="necesary_candys">0</field>
+		<field name="pokemon_name">Mew</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">152</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Chikorita</field>
+		<field name="pokemon_evolution">153</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">153</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Bayleef</field>
+		<field name="pokemon_evolution">154</field>
+		<field name="pokemon_preevolution">152</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">154</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Meganium</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">153</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">155</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Cyndaquil</field>
+		<field name="pokemon_evolution">156</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">156</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Quilava</field>
+		<field name="pokemon_evolution">157</field>
+		<field name="pokemon_preevolution">155</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">157</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Typhlosion</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">156</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">158</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Totodile</field>
+		<field name="pokemon_evolution">159</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">159</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Croconaw</field>
+		<field name="pokemon_evolution">160</field>
+		<field name="pokemon_preevolution">158</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">160</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Feraligatr</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">159</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">161</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Sentret</field>
+		<field name="pokemon_evolution">162</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">162</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Furret</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">161</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">163</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Hoothoot</field>
+		<field name="pokemon_evolution">164</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">164</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Noctowl</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">163</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">165</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ledyba</field>
+		<field name="pokemon_evolution">166</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">166</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ledian</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">165</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">167</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Spinarak</field>
+		<field name="pokemon_evolution">168</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">168</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ariados</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">167</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">169</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Crobat</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">42</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">170</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Chinchou</field>
+		<field name="pokemon_evolution">171</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">171</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Lanturn</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">170</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">172</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Pichu</field>
+		<field name="pokemon_evolution">25</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">173</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Cleffa</field>
+		<field name="pokemon_evolution">35</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">174</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Igglybuff</field>
+		<field name="pokemon_evolution">39</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">175</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Togepi</field>
+		<field name="pokemon_evolution">176</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">176</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Togetic</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">175</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">177</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Natu</field>
+		<field name="pokemon_evolution">178</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">178</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Xatu</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">177</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">179</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Mareep</field>
+		<field name="pokemon_evolution">180</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">180</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Flaaffy</field>
+		<field name="pokemon_evolution">181</field>
+		<field name="pokemon_preevolution">179</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">181</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ampharos</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">180</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">182</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Bellossom</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">45</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">183</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Marill</field>
+		<field name="pokemon_evolution">184</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">184</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Azumarill</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">183</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">185</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Sudowoodo</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">186</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Politoed</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">187</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Hoppip</field>
+		<field name="pokemon_evolution">188</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">188</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Skiploom</field>
+		<field name="pokemon_evolution">189</field>
+		<field name="pokemon_preevolution">187</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">189</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Jumpluff</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">188</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">190</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Aipom</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">191</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Sunkern</field>
+		<field name="pokemon_evolution">192</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">192</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Sunflora</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">191</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">193</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Yanma</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">194</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Wooper</field>
+		<field name="pokemon_evolution">195</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">195</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Quagsire</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">194</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">196</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Espeon</field>
+		<field name="pokemon_evolution">197</field>
+		<field name="pokemon_preevolution">136</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">197</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Umbreon</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">196</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">198</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Murkrow</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">199</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Slowking</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">80</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">200</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Misdreavus</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">201</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Unown</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">202</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Wobbuffet</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">203</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Girafarig</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">204</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Pineco</field>
+		<field name="pokemon_evolution">205</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">205</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Forretress</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">204</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">206</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Dunsparce</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">207</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Gligar</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">208</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Steelix</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">95</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">209</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Snubbull</field>
+		<field name="pokemon_evolution">210</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">210</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Granbull</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">209</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">211</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Qwilfish</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">212</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Scizor</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">123</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">213</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Shuckle</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">214</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Heracross</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">215</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Sneasel</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">216</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Teddiursa</field>
+		<field name="pokemon_evolution">217</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">217</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ursaring</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">216</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">218</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Slugma</field>
+		<field name="pokemon_evolution">219</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">219</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Magcargo</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">218</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">220</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Swinub</field>
+		<field name="pokemon_evolution">221</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">221</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Piloswine</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">220</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">222</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Corsola</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">223</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Remoraid</field>
+		<field name="pokemon_evolution">224</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">224</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Octillery</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">223</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">225</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Delibird</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">226</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Mantine</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">227</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Skarmory</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">228</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Houndour</field>
+		<field name="pokemon_evolution">229</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">229</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Houndoom</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">228</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">230</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Kingdra</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">117</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">231</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Phanpy</field>
+		<field name="pokemon_evolution">232</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">232</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Donphan</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">231</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">233</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Porygon2</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">137</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">234</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Stantler</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">235</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Smeargle</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">236</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Tyrogue</field>
+		<field name="pokemon_evolution">106</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">237</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Hitmontop</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">107</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">238</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Smoochum</field>
+		<field name="pokemon_evolution">124</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">239</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Elekid</field>
+		<field name="pokemon_evolution">125</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">240</field>
+		<field name="necesary_candys">25</field>
+		<field name="pokemon_name">Magby</field>
+		<field name="pokemon_evolution">126</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">241</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Miltank</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">242</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Blissey</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">113</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">243</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Raikou</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">244</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Entei</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">245</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Suicune</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">246</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Larvitar</field>
+		<field name="pokemon_evolution">247</field>
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">247</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Pupitar</field>
+		<field name="pokemon_evolution">248</field>
+		<field name="pokemon_preevolution">246</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">248</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Tyranitar</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution">247</field>
+		<field name="pokemon_active">1</field>
+	</row>
+	<row>
+		<field name="pokemon_id">249</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Lugia</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">250</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Ho-Oh</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	<row>
+		<field name="pokemon_id">251</field>
+		<field name="necesary_candys">50</field>
+		<field name="pokemon_name">Celebi</field>
+		<field name="pokemon_evolution" xsi:nil="true" />
+		<field name="pokemon_preevolution" xsi:nil="true" />
+		<field name="pokemon_active">0</field>
+	</row>
+	</table_data>
+	<table_structure name="record">
+		<field Field="record_id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="record_user" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="record_candys" Type="int(3)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="record_pokedex" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="record_pokemon" Type="int(4)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="record_date" Type="date" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="record" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="record_id" Collation="A" Cardinality="272" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="record" Engine="InnoDB" Version="10" Row_format="Compact" Rows="272" Avg_row_length="60" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="353" Create_time="2017-01-30 16:29:50" Collation="utf8_spanish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="record">
+	<row>
+		<field name="record_id">1</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">19</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">1</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">5</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">16</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">4</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">8</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">131</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">7</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">9</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">107</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">10</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">10</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">274</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">13</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">11</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">797</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">16</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">12</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">148</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">19</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">13</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">185</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">21</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">14</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">330</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">23</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">15</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">44</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">172</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">16</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">80</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">27</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">17</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">87</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">29</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">18</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">107</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">32</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">19</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">57</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">173</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">20</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">2</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">37</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">21</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">346</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">174</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">22</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">198</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">41</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">23</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">69</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">43</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">24</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">258</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">46</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">25</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">194</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">48</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">26</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">96</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">50</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">27</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">210</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">52</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">28</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">163</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">54</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">29</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">30</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">56</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">30</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">61</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">58</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">31</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">265</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">60</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">32</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">124</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">63</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">33</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">34</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">66</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">34</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">69</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">35</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">89</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">72</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">36</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">26</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">74</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">37</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">79</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">77</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">38</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">340</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">79</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">39</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">71</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">81</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">40</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">54</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">84</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">41</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">59</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">86</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">42</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">39</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">88</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">43</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">41</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">90</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">44</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">92</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">45</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">68</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">96</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">46</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">241</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">98</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">47</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">100</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">48</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">35</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">102</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">49</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">30</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">104</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">50</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">70</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">109</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">51</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">8</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">111</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">52</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">124</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">116</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">53</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">205</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">118</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">54</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">226</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">120</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">55</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">84</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">238</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">56</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">1</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">239</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">57</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">157</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">240</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">58</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">247</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">129</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">59</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">379</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">133</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">60</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">3</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">138</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">61</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">36</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">140</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">62</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">116</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">147</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">63</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">22</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">175</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">64</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">83</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">65</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">42</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">95</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">66</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">51</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">106</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">67</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">15</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">107</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">68</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">92</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">108</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">69</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">61</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">113</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">70</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">42</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">114</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">71</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">115</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">72</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">183</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">122</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">73</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">11</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">123</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">74</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">57</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">127</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">75</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">128</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">76</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">131</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">77</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">11</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">132</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">78</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">13</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">137</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">79</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">78</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">142</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">80</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">69</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">143</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">156</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">19</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">1</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">157</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">16</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">4</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">158</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">131</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">7</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">159</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">107</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">10</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">160</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">274</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">13</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">161</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">797</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">16</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">162</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">148</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">19</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">163</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">185</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">21</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">164</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">330</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">23</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">165</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">44</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">172</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">166</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">80</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">27</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">167</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">87</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">29</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">168</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">107</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">32</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">169</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">57</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">173</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">170</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">2</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">37</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">171</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">346</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">174</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">172</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">198</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">41</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">173</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">69</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">43</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">174</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">258</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">46</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">175</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">194</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">48</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">176</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">96</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">50</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">177</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">210</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">52</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">178</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">163</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">54</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">179</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">30</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">56</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">180</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">61</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">58</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">181</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">265</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">60</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">182</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">124</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">63</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">183</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">34</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">66</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">184</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">69</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">185</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">89</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">72</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">186</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">26</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">74</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">187</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">79</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">77</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">188</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">340</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">79</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">189</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">71</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">81</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">190</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">83</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">191</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">54</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">84</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">192</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">59</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">86</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">193</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">39</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">88</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">194</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">41</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">90</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">195</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">92</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">196</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">42</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">95</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">197</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">68</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">96</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">198</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">241</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">98</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">199</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">100</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">200</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">35</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">102</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">201</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">30</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">104</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">202</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">51</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">106</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">203</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">15</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">107</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">204</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">92</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">108</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">205</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">70</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">109</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">206</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">8</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">111</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">207</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">61</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">113</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">208</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">42</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">114</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">209</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">115</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">210</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">124</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">116</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">211</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">205</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">118</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">212</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">226</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">120</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">213</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">183</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">122</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">214</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">11</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">123</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">215</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">84</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">238</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">216</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">1</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">239</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">217</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">157</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">240</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">218</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">57</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">127</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">219</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">128</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">220</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">247</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">129</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">221</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">131</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">222</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">11</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">132</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">223</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">379</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">133</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">224</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">13</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">137</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">225</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">3</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">138</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">226</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">36</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">140</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">227</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">78</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">142</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">228</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">69</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">143</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">229</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">116</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">147</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">230</field>
+		<field name="record_user">1</field>
+		<field name="record_candys">22</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">175</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">231</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">19</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">1</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">232</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">16</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">4</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">233</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">131</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">7</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">234</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">107</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">10</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">235</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">274</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">13</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">236</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">797</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">16</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">237</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">148</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">19</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">238</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">185</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">21</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">239</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">330</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">23</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">240</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">44</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">172</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">241</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">80</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">27</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">242</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">87</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">29</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">243</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">107</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">32</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">244</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">57</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">173</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">245</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">2</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">37</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">246</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">346</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">174</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">247</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">198</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">41</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">248</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">69</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">43</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">249</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">258</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">46</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">250</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">194</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">48</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">251</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">96</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">50</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">252</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">210</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">52</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">253</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">163</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">54</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">254</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">30</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">56</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">255</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">61</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">58</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">256</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">265</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">60</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">257</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">124</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">63</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">258</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">34</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">66</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">259</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">69</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">260</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">89</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">72</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">261</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">26</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">74</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">262</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">79</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">77</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">263</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">340</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">79</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">264</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">71</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">81</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">265</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">83</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">266</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">54</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">84</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">267</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">59</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">86</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">268</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">39</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">88</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">269</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">41</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">90</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">270</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">92</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">271</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">42</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">95</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">272</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">68</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">96</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">273</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">241</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">98</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">274</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">66</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">100</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">275</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">35</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">102</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">276</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">30</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">104</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">277</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">51</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">106</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">278</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">15</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">107</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">279</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">92</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">108</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">280</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">70</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">109</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">281</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">8</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">111</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">282</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">61</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">113</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">283</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">42</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">114</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">284</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">115</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">285</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">124</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">116</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">286</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">205</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">118</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">287</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">226</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">120</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">288</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">183</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">122</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">289</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">11</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">123</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">290</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">84</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">238</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">291</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">1</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">239</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">292</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">157</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">240</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">293</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">57</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">127</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">294</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">128</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">295</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">247</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">129</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">296</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">131</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">297</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">11</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">132</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">298</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">379</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">133</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">299</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">13</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">137</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">300</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">3</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">138</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">301</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">36</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">140</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">302</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">78</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">142</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">303</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">69</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">143</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">304</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">116</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">147</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">305</field>
+		<field name="record_user">2</field>
+		<field name="record_candys">22</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">175</field>
+		<field name="record_date">2017-02-13</field>
+	</row>
+	<row>
+		<field name="record_id">306</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">152</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">307</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">155</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">308</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">158</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">309</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">161</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">310</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">163</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">311</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">165</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">312</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">167</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">313</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">170</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">314</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">177</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">315</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">179</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">316</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">183</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">317</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">185</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">318</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">186</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">319</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">187</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">320</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">190</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">321</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">191</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">322</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">193</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">323</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">194</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">324</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">198</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">325</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">200</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">326</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">201</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">327</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">202</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">328</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">203</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">329</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">204</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">330</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">206</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">331</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">207</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">332</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">209</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">333</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">211</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">334</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">213</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">335</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">214</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">336</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">215</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">337</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">216</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">338</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">218</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">339</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">220</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">340</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">222</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">341</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">223</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">342</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">225</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">343</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">226</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">344</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">227</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">345</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">228</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">346</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">231</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">347</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">234</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">348</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">235</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">349</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">236</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">350</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">241</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">351</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">246</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	<row>
+		<field name="record_id">352</field>
+		<field name="record_user">0</field>
+		<field name="record_candys">0</field>
+		<field name="record_pokedex">0</field>
+		<field name="record_pokemon">237</field>
+		<field name="record_date">2017-02-17</field>
+	</row>
+	</table_data>
+	<table_structure name="user">
+		<field Field="user_id" Type="int(3)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="user_name" Type="varchar(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="user_pass" Type="varchar(10)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="user" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="2" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="user" Engine="InnoDB" Version="10" Row_format="Compact" Rows="2" Avg_row_length="8192" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="2" Create_time="2017-01-24 16:45:19" Collation="utf8_spanish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="user">
+	<row>
+		<field name="user_id">0</field>
+		<field name="user_name">santii810</field>
+		<field name="user_pass">gvs689</field>
+	</row>
+	<row>
+		<field name="user_id">1</field>
+		<field name="user_name">silvia</field>
+		<field name="user_pass">sri</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
+>>>>>>> parent of 5ec6116... correcciones en base de datos

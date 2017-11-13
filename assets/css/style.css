@@ -19,6 +19,12 @@ main{
 }
 
 
+<<<<<<< HEAD
+=======
+.evolution-cell{
+    background-color: rgba(18, 18, 116, 0.43);    
+}
+>>>>>>> parent of 5ec6116... correcciones en base de datos
 
 .fixed-nav-bar{
     background-color: rgb(20, 20, 140);
@@ -45,7 +51,6 @@ main{
     position: relative;
     border: 5px solid;
     border-radius: 10px;
-    background-color: rgba(18, 18, 116, 0.43);
 }
 
 
